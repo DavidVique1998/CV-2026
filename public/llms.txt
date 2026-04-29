@@ -1,0 +1,41 @@
+# David Vique — Full-Stack Developer & Engineer
+
+> Portfolio: https://david-dev-portfolio-2026.vercel.app
+
+## About
+
+David Vique is a multi-disciplinary full-stack developer and software engineer based in Ecuador.
+He specializes in building complete, production-grade products — frontend, backend, infrastructure,
+and AI automation — as a solo developer who owns every layer of the stack.
+
+With 5+ years of experience and 9+ products shipped, he has worked across enterprise AI systems,
+learning management platforms, CRM tools, and cloud-native web applications.
+
+He also co-authored a research paper published at Springer BICA 2023 (Vol. 1130).
+
+## Skills & Technologies
+
+- **Frontend:** React, Next.js, Vite, Tailwind CSS, Radix UI, Three.js
+- **Backend:** NestJS, Node.js, Express, TypeORM, PostgreSQL, MongoDB
+- **Infrastructure:** AWS Lambda, S3, RDS, SST v4, Docker, GitHub Actions, CloudFront
+- **AI / Automation:** OpenAI, LangChain, N8N, Whisper, mem0, Qdrant, OCR pipelines
+- **Other:** Unity (3D/Game), Moodle (LMS), TypeScript, Python
+
+## Selected Projects
+
+- **UMI** — AI meeting intelligence platform. Records, transcribes, and analyzes meetings. Built with Next.js, NestJS, OpenAI, AWS Lambda, PostgreSQL, S3.
+- **BMC** — Section 125 benefits platform. React 19 SPA on AWS S3 + CloudFront, serverless Lambda functions, streaming AI chat widget, Resend email delivery.
+- **N8N Multi-client** — Self-hosted N8N chatbots, one per customer, orchestrating LLM conversations with isolated pipelines and guardrails.
+- **3D Portfolio** — Interactive Three.js WebGL experience with custom shaders and physics.
+- **Shooter Game Research** — Published paper (Springer, BICA 2023, Vol. 1130) on motion-tracking and shot-detection algorithms for real-time video analysis.
+
+## Contact & Social
+
+- GitHub: https://github.com/DavidVique1998
+- LinkedIn: https://www.linkedin.com/in/david-vique-b29941206
+- Instagram: https://www.instagram.com/david_vique98/
+- Location: Ecuador
+
+## Availability
+
+Available for new projects — freelance, contract, and full-time engagements.
