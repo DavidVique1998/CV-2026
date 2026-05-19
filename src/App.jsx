@@ -19,7 +19,7 @@ const TWEAK_DEFAULTS = {
 const HERO_TIMELINE = [
   { year: '2018', skills: 'Java · GIMP' },
   { year: '2019', skills: '.NET · C#' },
-  { year: '2021', skills: 'Node.js · Angular · MongoDB' },
+  { year: '2021', skills: 'Node.js · Angular · MongoDB · Python' },
   { year: '2022', skills: 'Spring Boot · PostgreSQL' },
   { year: '2023', skills: 'Unity · Python · Laravel · Vue.js' },
   { year: '2024', skills: 'React · LangChain · Docker · Cursor' },
