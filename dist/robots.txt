@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://david-dev-portfolio-2026.vercel.app/sitemap.xml

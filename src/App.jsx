@@ -296,7 +296,21 @@ const STACK = ["AWS Lambda", "Docker", "GitHub Actions", "Next.js", "React", "No
 
 const EXPERIENCES = [
   {
+    badge: "EN",
+    category: "freelancing",
+    title: { en: "AI Automation Founder", es: "Fundador de Automatización IA" },
+    where: "Entropía N8N Studio",
+    location: "Ecuador",
+    period: "2025 — Present",
+    link: "https://entropia-n8n-studio.vercel.app/es",
+    desc: {
+      en: "AI chatbot automation agency. Build N8N flows connected to WhatsApp, CRMs, and business APIs for lead capture, client management, and support automation.",
+      es: "Agencia de automatización con chatbots IA. Construyo flujos N8N conectados a WhatsApp, CRMs y APIs de negocio para captura de leads, gestión de clientes y automatización de soporte."
+    }
+  },
+  {
     badge: "PC",
+    category: "work",
     title: { en: "Full Stack Developer", es: "Desarrollador Full Stack" },
     where: "Pinecrest Consulting",
     location: "United States",
@@ -308,6 +322,7 @@ const EXPERIENCES = [
   },
   {
     badge: "D2",
+    category: "work",
     title: { en: "AI / Web Bot Developer", es: "Desarrollador AI / Web Bot" },
     where: "D2V",
     location: "Germany",
@@ -319,6 +334,7 @@ const EXPERIENCES = [
   },
   {
     badge: "RI",
+    category: "work",
     title: { en: "Full Stack / DevOps Developer", es: "Desarrollador Full Stack / DevOps" },
     where: "Relatividad IA",
     location: "Quito, Ecuador",
@@ -330,6 +346,7 @@ const EXPERIENCES = [
   },
   {
     badge: "FC",
+    category: "work",
     title: { en: "Full Stack / DevOps Developer", es: "Desarrollador Full Stack / DevOps" },
     where: "Fenix Corp",
     location: "Latacunga, Ecuador",
@@ -341,6 +358,7 @@ const EXPERIENCES = [
   },
   {
     badge: "AL",
+    category: "work",
     title: { en: "Programming Instructor", es: "Instructor de Programación" },
     where: "Algorithmics International School",
     location: "Latacunga, Ecuador",
@@ -352,6 +370,7 @@ const EXPERIENCES = [
   },
   {
     badge: "TC",
+    category: "work",
     title: { en: "Full Stack / DevOps Developer", es: "Desarrollador Full Stack / DevOps" },
     where: "Taurhus Capacitaciones",
     location: "Illuchi, Ecuador",
@@ -363,6 +382,7 @@ const EXPERIENCES = [
   },
   {
     badge: "ES",
+    category: "work",
     title: { en: "Game Engine / AI Developer", es: "Desarrollador Game Engine / IA" },
     where: "ESPE · Taurhus Capacitaciones",
     location: "Belisario Quevedo, Ecuador",
@@ -690,6 +710,10 @@ function TechStrip() {
 }
 
 function Experience({ t, lang }) {
+  const categories = [
+    { key: "freelancing", label: { en: "Freelancing", es: "Freelancing" } },
+    { key: "work", label: { en: "Work Experience", es: "Experiencia Laboral" } },
+  ]
   return (
     <section id="experience" className="experience">
       <div className="wrap">
@@ -700,18 +724,32 @@ function Experience({ t, lang }) {
           </div>
           <p className="sec-desc">{t.experience.desc}</p>
         </div>
-        <div className="exp-grid">
-          {EXPERIENCES.map((e, i) => (
-            <div key={i} className="exp-card reveal" style={{ transitionDelay: `${i * 80}ms` }}>
-              <div className="exp-badge">{e.badge}</div>
-              <div>
-                <h4>{e.title[lang]}</h4>
-                <div className="meta">{e.where}{e.location ? ` · ${e.location}` : ''} · {e.period}</div>
-                <p>{e.desc[lang]}</p>
+        {categories.map(cat => {
+          const items = EXPERIENCES.filter(e => e.category === cat.key)
+          if (!items.length) return null
+          return (
+            <div key={cat.key} className="exp-group">
+              <div className="exp-group-label">{cat.label[lang]}</div>
+              <div className="exp-grid">
+                {items.map((e, i) => (
+                  <div key={i} className="exp-card reveal" style={{ transitionDelay: `${i * 80}ms` }}>
+                    <div className="exp-badge">{e.badge}</div>
+                    <div>
+                      <h4>{e.title[lang]}</h4>
+                      <div className="meta">{e.where}{e.location ? ` · ${e.location}` : ''} · {e.period}</div>
+                      <p>{e.desc[lang]}</p>
+                      {e.link && (
+                        <a href={e.link} target="_blank" rel="noopener noreferrer" className="exp-link">
+                          {e.link.replace(/^https?:\/\//, '')} ↗
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
+          )
+        })}
       </div>
     </section>
   )

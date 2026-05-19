@@ -903,6 +903,35 @@ section { position: relative; }
   color: var(--ink-soft);
 }
 
+.exp-group {
+  margin-bottom: 40px;
+}
+
+.exp-group-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--fs-13);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  border-left: 3px solid var(--primary);
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+.exp-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: var(--fs-13);
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.exp-link:hover {
+  opacity: 0.75;
+}
+
 /* ===== Approach ===== */
 .approach { padding: 100px 0; border-top: var(--border-w) solid var(--ink); }
 
