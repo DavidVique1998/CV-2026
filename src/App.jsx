@@ -41,7 +41,7 @@ const COPY = {
       label: "/ 02 — selected work",
       title: "A small selection of recent projects.",
       desc: "From enterprise AI systems to learning platforms — here's what I've been shipping.",
-      filters: ["All", "AI", "LMS", "CRM", "Web", "Paper"],
+      filters: ["All", "AI", "LMS", "CRM", "Web", "Paper", "Freelancing"],
       showMore: "Show more",
       showLess: "Show less"
     },
@@ -117,7 +117,7 @@ const COPY = {
       label: "/ 02 — proyectos seleccionados",
       title: "Una selección de proyectos recientes.",
       desc: "Desde sistemas IA empresariales hasta plataformas de aprendizaje.",
-      filters: ["Todos", "IA", "LMS", "CRM", "Web", "Paper"],
+      filters: ["Todos", "IA", "LMS", "CRM", "Web", "Paper", "Freelancing"],
       showMore: "Ver más",
       showLess: "Ver menos"
     },
@@ -198,7 +198,7 @@ const PROJECTS = [
     color: "#000000", textColor: "#ffffff", link: "#"
   },
   {
-    id: 5, title: "Atiende — CRM WhatsApp", cat: "CRM",
+    id: 5, title: "Atiende — CRM WhatsApp", cat: "Freelancing",
     desc: { en: "WhatsApp ticketing CRM wired into N8N automations — full customer lifecycle from first message to resolution.", es: "CRM de tickets WhatsApp conectado a N8N — ciclo completo del cliente desde el primer mensaje hasta la resolución." },
     tech: ["Next.js", "N8N", "Appwrite", "WhatsApp API"],
     color: "#C6F24E", textColor: "#111111", link: "#"
@@ -576,7 +576,7 @@ function Work({ t, lang }) {
   const [filter, setFilter] = useState(defaultFilter)
   const [visibleCount, setVisibleCount] = useState(4)
   useEffect(() => { setFilter(lang === 'es' ? "Todos" : "All") }, [lang])
-  const filterMap = { "All": "All", "Todos": "All", "AI": "AI", "IA": "AI", "LMS": "LMS", "CRM": "CRM", "Web": "Web", "Paper": "Paper" }
+  const filterMap = { "All": "All", "Todos": "All", "AI": "AI", "IA": "AI", "LMS": "LMS", "CRM": "CRM", "Web": "Web", "Paper": "Paper", "Freelancing": "Freelancing" }
   const shown = useMemo(() => {
     const key = filterMap[filter] || "All"
     return key === "All" ? PROJECTS : PROJECTS.filter(p => p.cat === key)
