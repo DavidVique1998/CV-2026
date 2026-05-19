@@ -16,6 +16,17 @@ const TWEAK_DEFAULTS = {
   dark: true,
 }
 
+const HERO_TIMELINE = [
+  { year: '2018', skills: 'Java · GIMP' },
+  { year: '2019', skills: '.NET · C#' },
+  { year: '2021', skills: 'Node.js · Angular · MongoDB' },
+  { year: '2022', skills: 'Spring Boot · PostgreSQL' },
+  { year: '2023', skills: 'Unity · Python · Laravel · Vue.js' },
+  { year: '2024', skills: 'React · LangChain · Docker · Cursor' },
+  { year: '2025', skills: 'NestJS · Next.js · AWS · OpenAI · N8N' },
+  { year: '2026', skills: 'SST · mem0 · MCPs', active: true },
+]
+
 /* ===== CONTENT ===== */
 const COPY = {
   en: {
@@ -195,10 +206,16 @@ const PROJECTS = [
     id: 4, title: "N8N Relatividad IA", cat: "AI",
     desc: { en: "Multiple self-hosted N8N chatbots, one per customer — orchestrating LLM conversations with isolated pipelines and guardrails.", es: "N8N multi-cliente auto-hospedado con chatbots aislados por cliente que orquestan conversaciones LLM." },
     tech: ["N8N", "Docker", "LangChain", "Evolution API"],
-    color: "#000000", textColor: "#ffffff", link: "#"
+    color: "#000000", textColor: "#ffffff", link: "https://www.relatividadia.com/"
   },
   {
-    id: 5, title: "Atiende — CRM WhatsApp", cat: "Freelancing",
+    id: 5, title: "Entropía N8N Studio", cat: "Freelancing",
+    desc: { en: "AI chatbot automation agency. Build N8N flows connected to WhatsApp, CRMs, and business APIs for lead capture, client management, and support automation.", es: "Agencia de automatización con chatbots IA. Flujos N8N conectados a WhatsApp, CRMs y APIs de negocio para captura de leads, gestión de clientes y automatización de soporte." },
+    tech: ["N8N", "WhatsApp API", "CRM", "AI Chatbots"],
+    color: "#1a0533", textColor: "#C6F24E", link: "https://entropia-n8n-studio.vercel.app/en"
+  },
+  {
+    id: 10, title: "Atiende — CRM WhatsApp", cat: "CRM",
     desc: { en: "WhatsApp ticketing CRM wired into N8N automations — full customer lifecycle from first message to resolution.", es: "CRM de tickets WhatsApp conectado a N8N — ciclo completo del cliente desde el primer mensaje hasta la resolución." },
     tech: ["Next.js", "N8N", "Appwrite", "WhatsApp API"],
     color: "#C6F24E", textColor: "#111111", link: "#"
@@ -302,7 +319,7 @@ const EXPERIENCES = [
     where: "Entropía N8N Studio",
     location: "Ecuador",
     period: "2025 — Present",
-    link: "https://entropia-n8n-studio.vercel.app/es",
+    link: "https://entropia-n8n-studio.vercel.app/en",
     desc: {
       en: "AI chatbot automation agency. Build N8N flows connected to WhatsApp, CRMs, and business APIs for lead capture, client management, and support automation.",
       es: "Agencia de automatización con chatbots IA. Construyo flujos N8N conectados a WhatsApp, CRMs y APIs de negocio para captura de leads, gestión de clientes y automatización de soporte."
@@ -539,6 +556,13 @@ function Hero({ t }) {
     <section id="top" className="hero wrap" ref={ref}>
       <div className="hero-scribble">
         <img src="/david.JPG" alt="David" className="hero-photo" />
+        <div className="photo-countries">
+          <span>🇪🇨 EC</span>
+          <span className="pc-dot">·</span>
+          <span>🇩🇪 DE</span>
+          <span className="pc-dot">·</span>
+          <span>🇺🇸 US</span>
+        </div>
       </div>
       <div className="hero-scribble-2"></div>
       <CursorSticker text={t.hero.sticker} containerRef={ref} />
@@ -565,6 +589,19 @@ function Hero({ t }) {
               <div className="v">{m.v}</div>
             </div>
           ))}
+        </div>
+        <div className="hero-timeline">
+          {HERO_TIMELINE.flatMap((node, i) => {
+            const items = []
+            if (i > 0) items.push(<div key={`c-${i}`} className="ht-connector" />)
+            items.push(
+              <div key={`n-${i}`} className={`ht-node${node.active ? ' active' : ''}`}>
+                <span className="ht-year">{node.year}</span>
+                <span className="ht-skills">{node.skills}</span>
+              </div>
+            )
+            return items
+          })}
         </div>
       </div>
     </section>
@@ -628,7 +665,7 @@ function Work({ t, lang }) {
               <div className="project-visual" style={{ background: p.color, color: p.textColor }}>
                 <span style={{ position: 'relative', zIndex: 2 }}>{p.title}</span>
               </div>
-              <a href={p.link} target={p.link.startsWith('#') ? '_self' : '_blank'} rel="noopener noreferrer" className="project-link" aria-label={`Open ${p.title}`}>↗</a>
+              {p.link !== '#' && <a href={p.link} target="_blank" rel="noopener noreferrer" className="project-link" aria-label={`Open ${p.title}`}>↗</a>}
             </div>
           ))}
         </div>
