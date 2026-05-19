@@ -845,23 +845,23 @@ function Scrolly({ t, lang }) {
               </div>
               <div className={`layer ${active === 1 ? 'active' : ''}`}>
                 <div className="layer-chat">
-                  <div className="bubble bot">hola, soy el asistente</div>
-                  <div className="bubble user">necesito mi factura</div>
-                  <div className="bubble bot">claro, dame un segundo…</div>
+                  <div className="bubble bot">{lang === 'en' ? "hi, I'm your assistant" : "hola, soy el asistente"}</div>
+                  <div className="bubble user">{lang === 'en' ? "I need my invoice" : "necesito mi factura"}</div>
+                  <div className="bubble bot">{lang === 'en' ? "sure, give me a sec…" : "claro, dame un segundo…"}</div>
                   <div className="bubble bot typing"></div>
                 </div>
               </div>
               <div className={`layer ${active === 2 ? 'active' : ''}`}>
                 <div className="layer-dash">
-                  <div className="stat-tile"><div className="big">94%</div><div className="lbl">resolved</div></div>
-                  <div className="stat-tile"><div className="big">1.2s</div><div className="lbl">avg latency</div></div>
-                  <div className="stat-tile"><div className="big">12k</div><div className="lbl">msgs / wk</div></div>
+                  <div className="stat-tile"><div className="big">94%</div><div className="lbl">{lang === 'en' ? "resolved" : "resuelto"}</div></div>
+                  <div className="stat-tile"><div className="big">1.2s</div><div className="lbl">{lang === 'en' ? "avg latency" : "lat. prom."}</div></div>
+                  <div className="stat-tile"><div className="big">12k</div><div className="lbl">{lang === 'en' ? "msgs / wk" : "msg / sem"}</div></div>
                   <div className="stat-tile"><div className="big">4.8★</div><div className="lbl">csat</div></div>
                 </div>
               </div>
               <div className={`layer ${active === 3 ? 'active' : ''}`}>
                 <div className="layer-launch">
-                  <div className="rocket">SHIPPED.</div>
+                  <div className="rocket">{lang === 'en' ? "SHIPPED." : "LANZADO."}</div>
                   <div className="tag">Live · v1.0</div>
                 </div>
               </div>
