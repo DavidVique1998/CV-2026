@@ -1241,14 +1241,6 @@ section { position: relative; }
   transform: scale(1.35);
 }
 
-.craft-media-btn {
-  position: absolute;
-  bottom: 32px;
-  right: 32px;
-  z-index: 3;
-  font-size: 12px;
-  padding: 8px 16px;
-}
 
 /* Craft photo frames */
 .craft-photo {

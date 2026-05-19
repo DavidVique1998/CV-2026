@@ -77,8 +77,6 @@ const COPY = {
       title: "Code is just the surface.",
       desc: "Spirit, mind, body — three pillars I train every day. Each one feeds the others. The code is just where it shows.",
       tesseract: "Below: a tesseract — the 4D equivalent of a cube. What you see is its shadow projected into 3D, rotating through a fourth dimension you can't look at directly.",
-      showMedia: "Show media",
-      hideMedia: "Hide media"
     },
     paper: {
       label: "/ 07 — published research",
@@ -153,8 +151,6 @@ const COPY = {
       title: "El código es solo la superficie.",
       desc: "Espíritu, mente y cuerpo — tres pilares que entreno cada día. Cada uno alimenta a los demás. El código es solo donde se nota.",
       tesseract: "Abajo: un teseracto — el equivalente 4D de un cubo. Lo que ves es su sombra proyectada en 3D, girando en una cuarta dimensión que no puedes mirar directamente.",
-      showMedia: "Mostrar media",
-      hideMedia: "Ocultar media"
     },
     paper: {
       label: "/ 07 — investigación publicada",
@@ -958,7 +954,7 @@ function CraftInstagram({ permalink, posClass, visible }) {
 function Craft({ t, lang }) {
   const [active, setActive] = useState(0)
   const [progress, setProgress] = useState(0)
-  const [showMedia, setShowMedia] = useState(true)
+
   const scrollRef = useRef(null)
 
   useEffect(() => {
@@ -1021,14 +1017,14 @@ function Craft({ t, lang }) {
                   key={`photo-${i}`}
                   permalink={s.photo.permalink}
                   posClass={s.photo.pos}
-                  visible={showMedia && active === i}
+                  visible={active === i}
                 />
               )
             }
             return (
               <div
                 key={`photo-${i}`}
-                className={`craft-photo ${s.photo.pos} ${showMedia && active === i ? 'visible' : ''}`}
+                className={`craft-photo ${s.photo.pos} ${active === i ? 'visible' : ''}`}
                 style={{ '--photo-rot': s.photo.rot }}
               >
                 <img src={s.photo.src} alt="" />
@@ -1040,12 +1036,6 @@ function Craft({ t, lang }) {
               <div key={i} className={`craft-dot ${active === i ? 'active' : ''}`} />
             ))}
           </div>
-          <button
-            className="craft-media-btn nb-btn"
-            onClick={() => setShowMedia(v => !v)}
-          >
-            {showMedia ? t.craft.hideMedia : t.craft.showMedia}
-          </button>
         </div>
       </div>
     </section>
