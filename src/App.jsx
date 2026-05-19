@@ -1006,6 +1006,11 @@ function Craft({ t, lang }) {
               <h3>{s.title[lang]}</h3>
               <p>{s.body[lang]}</p>
               <div className="craft-card-stat">{s.stat[lang]}</div>
+              {s.photo?.type === 'embed' && (
+                <a href={s.photo.permalink} target="_blank" rel="noopener noreferrer" className="craft-ig-link">
+                  Instagram ↗
+                </a>
+              )}
             </div>
           ))}
           {CRAFT_STEPS.map((s, i) => {

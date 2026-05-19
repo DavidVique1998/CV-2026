@@ -1301,6 +1301,10 @@ section { position: relative; }
 .craft-insta.visible { opacity: 1; transform: translateY(0); }
 .craft-insta iframe { display: block !important; }
 
+.craft-ig-link {
+  display: none;
+}
+
 
 @media (max-width: 800px) {
   /* Restore scrollytelling on mobile — same pattern as .scrolly section */
@@ -1317,6 +1321,18 @@ section { position: relative; }
   .craft-steps-indicator { bottom: 10px; left: 50%; transform: translateX(-50%); }
   .craft-photo { display: none; }
   .craft-insta { display: none; }
+  .craft-ig-link {
+    display: inline-block;
+    margin-top: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 2px;
+    letter-spacing: 0.04em;
+  }
 }
 
 /* ===== Show more ===== */
