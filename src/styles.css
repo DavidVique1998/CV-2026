@@ -1730,6 +1730,8 @@ section { position: relative; }
     padding: 32px 24px;
   }
   .exp-grid, .phases { grid-template-columns: 1fr; }
+  .exp-card { flex-direction: column; gap: 12px; }
+  .exp-badge { width: 56px; height: 56px; font-size: 18px; flex: 0 0 56px; }
   .contact-card { grid-template-columns: 1fr; }
   .hero-scribble, .hero-scribble-2 { display: none; }
   .contact-title { font-size: 48px; }
