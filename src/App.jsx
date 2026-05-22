@@ -190,7 +190,7 @@ const PROJECTS = [
     id: 2, title: "UMI — Unified Meeting Intel", cat: "AI",
     desc: { en: "Multi-platform meeting integration for Google Meet, Zoom, and Teams — transcription analysis, third-party transcript uploads, AI chat flows, and real-time statistics.", es: "Integración de reuniones multi-plataforma (Meet, Zoom, Teams) con análisis de transcripciones, carga de transcripts externos, flujos de chat IA y estadísticas en tiempo real." },
     tech: ["NestJS", "Next.js", "AWS Lambda", "OpenAI", "PostgreSQL"],
-    color: "#1C1D20", textColor: "#6366F1", link: "#"
+    color: "#1C1D20", textColor: "#6366F1", link: "https://d9shobjqv3rms.cloudfront.net/"
   },
   {
     id: 3, title: "Commission Tracker (CT)", cat: "AI",
@@ -1154,6 +1154,9 @@ function Contact({ t, showToast }) {
         <div className="footer-bar">
           <div>© 2026 David — Ecuador 🇪🇨</div>
           <div>{t.contact.foot}</div>
+        </div>
+        <div style={{textAlign:'center', fontSize:'0.78em', color:'#666', marginTop:'0.6em', opacity:0.7}}>
+          Triathlete — 1.5 km swim · 40 km bike · 10 km run
         </div>
       </div>
     </section>
