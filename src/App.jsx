@@ -206,8 +206,8 @@ const PROJECTS = [
   },
   {
     id: 5, title: "Entropía N8N Studio", cat: "Freelancing",
-    desc: { en: "AI chatbot automation agency. Build N8N flows connected to WhatsApp, CRMs, and business APIs for lead capture, client management, and support automation.", es: "Agencia de automatización con chatbots IA. Flujos N8N conectados a WhatsApp, CRMs y APIs de negocio para captura de leads, gestión de clientes y automatización de soporte." },
-    tech: ["N8N", "WhatsApp API", "CRM", "AI Chatbots"],
+    desc: { en: "AI automation agency delivering end-to-end voice and chat pipelines. N8N agentic flows, GoHighLevel embedded apps, ElevenLabs voice cloning, Twilio SMS/voice, Retell AI multi-turn voice agents, and WhatsApp lead funnels connected to CRM webhooks.", es: "Agencia de automatización IA con pipelines de voz y chat end-to-end. Flujos agénticos N8N, apps embebidas en GoHighLevel, voz ElevenLabs, SMS/voz Twilio, agentes de voz Retell AI y funnels WhatsApp conectados a CRM." },
+    tech: ["N8N", "GoHighLevel", "ElevenLabs", "Twilio", "Retell AI", "WhatsApp API"],
     color: "#1a0533", textColor: "#C6F24E", link: "https://entropia-n8n-studio.vercel.app/en"
   },
   {
@@ -317,8 +317,8 @@ const EXPERIENCES = [
     period: "2025 — Present",
     link: "https://entropia-n8n-studio.vercel.app/en",
     desc: {
-      en: "AI chatbot automation agency. Build N8N flows connected to WhatsApp, CRMs, and business APIs for lead capture, client management, and support automation.",
-      es: "Agencia de automatización con chatbots IA. Construyo flujos N8N conectados a WhatsApp, CRMs y APIs de negocio para captura de leads, gestión de clientes y automatización de soporte."
+      en: "AI automation agency delivering end-to-end voice and chat pipelines for SMBs. Build N8N agentic flows with multi-step tool calls, RAG memory, and fallback routing. Develop GoHighLevel embedded apps, Twilio SMS/voice integrations, ElevenLabs voice cloning for IVR, and Retell AI multi-turn voice agents for lead qualification. Automate WhatsApp funnels connected to CRM webhooks.",
+      es: "Agencia de automatización IA con pipelines de voz y chat end-to-end para PYMEs. Flujos agénticos N8N, apps embebidas en GoHighLevel, Twilio SMS/voz, clonación de voz ElevenLabs para IVR y agentes de voz Retell AI para calificación de leads. Funnels WhatsApp conectados a webhooks de CRM."
     }
   },
   {
@@ -327,10 +327,10 @@ const EXPERIENCES = [
     title: { en: "Full Stack Developer", es: "Desarrollador Full Stack" },
     where: "Pinecrest Consulting",
     location: "United States",
-    period: "Sept. 2025 — Present",
+    period: "Sept. 2025 — May 2026",
     desc: {
-      en: "Built CT (Commission Tracker) and UMI (Unified Meeting Integrated) as serverless solutions on AWS Lambda with GitHub Actions CI/CD. CT analyzes 52 companies using dynamic prompts, OCR, and queue-based flows. UMI integrates Meet, Zoom, and Teams with AI transcription and chat. Also implemented automated social media post scheduling via Metricool API.",
-      es: "Desarrollé CT (Commission Tracker) y UMI (Unified Meeting Integrated) como soluciones serverless en AWS Lambda con CI/CD en GitHub Actions. CT analiza 52 empresas con prompts dinámicos, OCR y flujos de cola. UMI integra Meet, Zoom y Teams con transcripción IA y chat. Implementé también publicación automática de redes sociales vía Metricool API."
+      en: "Built CT (Commission Tracker) and UMI (Unified Meeting Integrated) as serverless AWS Lambda products with GitHub Actions CI/CD. CT uses a two-step dynamic prompt architecture — company identification then company-specific extraction — to analyze 52 companies across OCR-parsed PDFs. UMI is a full meeting intelligence platform (Meet, Zoom, Teams) with AI transcription, RAG chat, action-item extraction, and mem0 persistent memory. Implemented social post scheduling via Metricool API and full SEO stack (JSON-LD, GA4, Open Graph, llms.txt) for BMC.",
+      es: "Desarrollé CT y UMI como productos serverless en AWS Lambda con CI/CD en GitHub Actions. CT usa arquitectura de prompts dinámica en dos pasos para analizar 52 empresas en PDFs con OCR. UMI es una plataforma de inteligencia de reuniones (Meet, Zoom, Teams) con transcripción IA, chat RAG, extracción de accionables y memoria persistente mem0. Implementé publicación automática en redes vía Metricool API y stack SEO completo para BMC."
     }
   },
   {
@@ -353,8 +353,8 @@ const EXPERIENCES = [
     location: "Quito, Ecuador",
     period: "Dec. 2024 — Aug. 2025",
     desc: {
-      en: "Developed a Logistic Tracker SaaS and WhatsApp CRM platform — N8N orchestration, Evolution API, AWS ECS deployment, and multi-tenant architecture.",
-      es: "Desarrollé un SaaS de rastreo logístico y plataforma CRM WhatsApp — orquestación N8N, Evolution API, despliegue en AWS ECS y arquitectura multi-tenant."
+      en: "Developed a Logistic Tracker SaaS and WhatsApp CRM platform — N8N orchestration, Evolution API, AWS ECS, multi-tenant architecture. Built AI voice agents with ElevenLabs + Twilio + Retell AI for client-facing IVR flows, and integrated GoHighLevel CRM pipelines for automated lead routing and follow-up sequences.",
+      es: "Desarrollé SaaS de rastreo logístico y CRM WhatsApp — orquestación N8N, Evolution API, AWS ECS, arquitectura multi-tenant. Construí agentes de voz IA con ElevenLabs + Twilio + Retell AI para flujos IVR y pipelines GoHighLevel para enrutamiento y seguimiento automático de leads."
     }
   },
   {
