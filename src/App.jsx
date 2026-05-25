@@ -56,7 +56,10 @@ const COPY = {
       filters: ["All", "AI", "LMS", "CRM", "Web", "Paper", "Freelancing"],
       showMore: "Show more",
       showLess: "Show less",
-      caseStudy: "Case study ↗"
+      caseStudy: "Case study ↗",
+      viewDetail: "→ Details",
+      close: "✕ Close",
+      visitSite: "Visit site ↗"
     },
     testimonials: {
       label: "/ 03 — kind words",
@@ -132,7 +135,10 @@ const COPY = {
       filters: ["Todos", "IA", "LMS", "CRM", "Web", "Paper", "Freelancing"],
       showMore: "Ver más",
       showLess: "Ver menos",
-      caseStudy: "Caso detallado ↗"
+      caseStudy: "Caso detallado ↗",
+      viewDetail: "→ Detalles",
+      close: "✕ Cerrar",
+      visitSite: "Ver sitio ↗"
     },
     testimonials: {
       label: "/ 03 — testimonios",
@@ -245,6 +251,93 @@ const PROJECTS = [
     color: "#111111", textColor: "#C6F24E", link: "#paper"
   }
 ]
+
+const PROJECT_DETAILS = {
+  bmc: {
+    en: {
+      description: "Section 125 benefits platform built for US employers. React 19 SPA deployed on AWS S3 + CloudFront, with two serverless Lambda functions handling form submissions and a streaming AI chat widget powered by Claude API.<br/><br/>Email delivery via Resend. Fully managed infrastructure using SST v4 — zero servers, zero idle cost.",
+      images: [
+        { src: "/projects/bmc/bmc-0.jpg", caption: "Hero section" },
+        { src: "/projects/bmc/bmc-1.jpg", caption: "Benefits features" },
+        { src: "/projects/bmc/bmc-2.jpg", caption: "AI chat widget" },
+      ]
+    },
+    es: {
+      description: "Plataforma de beneficios Section 125 para empleadores de EE.UU. SPA React 19 en AWS S3 + CloudFront, con dos funciones Lambda serverless para formularios y un chat IA en streaming con Claude API.<br/><br/>Entrega de emails vía Resend. Infraestructura gestionada con SST v4 — sin servidores, sin costo inactivo.",
+      images: [
+        { src: "/projects/bmc/bmc-0.jpg", caption: "Sección hero" },
+        { src: "/projects/bmc/bmc-1.jpg", caption: "Beneficios y características" },
+        { src: "/projects/bmc/bmc-2.jpg", caption: "Chat IA widget" },
+      ]
+    }
+  },
+  umi: {
+    en: {
+      description: "Multi-platform meeting intelligence system for Google Meet, Zoom, and Teams. Transcription analysis, third-party transcript uploads, AI chat flows over meeting content, and real-time statistics dashboard.<br/><br/>NestJS API on AWS Lambda, Next.js frontend, OpenAI Whisper for transcription, mem0 for persistent AI memory across sessions. Deployed with SST v4 + GitHub Actions CI/CD.",
+      images: [
+        { src: "/projects/umi/umi-0.jpg", caption: "Landing hero" },
+        { src: "/projects/umi/umi-1.jpg", caption: "Features overview" },
+        { src: "/projects/umi/umi-2.jpg", caption: "Platform details" },
+      ]
+    },
+    es: {
+      description: "Sistema de inteligencia de reuniones multi-plataforma para Google Meet, Zoom y Teams. Análisis de transcripciones, carga de transcripts externos, flujos de chat IA sobre el contenido y panel de estadísticas en tiempo real.<br/><br/>API NestJS en AWS Lambda, frontend Next.js, OpenAI Whisper para transcripción, mem0 para memoria IA persistente. Desplegado con SST v4 + GitHub Actions.",
+      images: [
+        { src: "/projects/umi/umi-0.jpg", caption: "Hero del landing" },
+        { src: "/projects/umi/umi-1.jpg", caption: "Resumen de funciones" },
+        { src: "/projects/umi/umi-2.jpg", caption: "Detalles de la plataforma" },
+      ]
+    }
+  },
+  ct: {
+    en: {
+      description: "Serverless commission data analyzer for 52 insurance companies. Dynamic prompt templates per company, PDF OCR pipeline with Tesseract, and queue-based flows for batch processing and human-review escalation.<br/><br/>Deployed on AWS Lambda with GitHub Actions CI/CD. Processes hundreds of commission statements per run with structured JSON output for downstream reconciliation.",
+      images: [
+        { src: "/projects/ct/ct-0.jpg", caption: "Landing page" },
+        { src: "/projects/ct/ct-1.jpg", caption: "Features section" },
+      ]
+    },
+    es: {
+      description: "Analizador serverless de comisiones para 52 compañías de seguros. Plantillas de prompts dinámicas por empresa, pipeline OCR de PDFs con Tesseract y flujos de cola para procesamiento en lote y escalación a revisión humana.<br/><br/>Desplegado en AWS Lambda con GitHub Actions. Procesa cientos de estados de comisión por ejecución con salida JSON estructurada.",
+      images: [
+        { src: "/projects/ct/ct-0.jpg", caption: "Página principal" },
+        { src: "/projects/ct/ct-1.jpg", caption: "Sección de funciones" },
+      ]
+    }
+  },
+  entropia: {
+    en: {
+      description: "AI automation agency delivering end-to-end voice and chat pipelines for SMBs. N8N agentic flows with multi-step tool calls, RAG memory, and fallback routing.<br/><br/>Integrates GoHighLevel embedded apps, ElevenLabs voice cloning for IVR, Twilio SMS/voice, Retell AI multi-turn voice agents, and WhatsApp funnels wired into CRM webhooks.",
+      images: [
+        { src: "/projects/entropia/entropia-0.jpg", caption: "Agency landing" },
+        { src: "/projects/entropia/entropia-1.jpg", caption: "Services section" },
+      ]
+    },
+    es: {
+      description: "Agencia de automatización IA con pipelines de voz y chat end-to-end para PYMEs. Flujos agénticos N8N con llamadas a herramientas multi-paso, memoria RAG y enrutamiento de fallback.<br/><br/>Integra apps embebidas en GoHighLevel, clonación de voz ElevenLabs para IVR, Twilio SMS/voz, agentes de voz multi-turno Retell AI y funnels WhatsApp conectados a webhooks de CRM.",
+      images: [
+        { src: "/projects/entropia/entropia-0.jpg", caption: "Landing de la agencia" },
+        { src: "/projects/entropia/entropia-1.jpg", caption: "Sección de servicios" },
+      ]
+    }
+  },
+  qubex: {
+    en: {
+      description: "Polished AI chat interface exposing large language models through a clean, fast UI. Built with Next.js and React, deployed on Vercel.<br/><br/>Supports streaming responses, conversation history, and multiple model configurations. Designed for simplicity — no friction between the user and the model.",
+      images: [
+        { src: "/projects/qubex/qubex-0.jpg", caption: "Chat interface" },
+        { src: "/projects/qubex/qubex-1.jpg", caption: "Model features" },
+      ]
+    },
+    es: {
+      description: "Interfaz de chat IA pulida que expone grandes modelos de lenguaje a través de una UI limpia y rápida. Construida con Next.js y React, desplegada en Vercel.<br/><br/>Soporta respuestas en streaming, historial de conversación y múltiples configuraciones de modelos. Diseñada para la simplicidad — sin fricción entre el usuario y el modelo.",
+      images: [
+        { src: "/projects/qubex/qubex-0.jpg", caption: "Interfaz de chat" },
+        { src: "/projects/qubex/qubex-1.jpg", caption: "Funciones del modelo" },
+      ]
+    }
+  }
+}
 
 const TESTIMONIALS = [
   {
@@ -609,10 +702,71 @@ function Hero({ t }) {
   )
 }
 
+function ProjectModal({ project, detail, t, onClose }) {
+  const [imgIdx, setImgIdx] = useState(0)
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') onClose() }
+    document.addEventListener('keydown', onKey)
+    document.body.style.overflow = 'hidden'
+    return () => { document.removeEventListener('keydown', onKey); document.body.style.overflow = '' }
+  }, [onClose])
+
+  if (!detail) return null
+  const imgs = detail.images || []
+
+  return (
+    <div className="pm-overlay" onClick={onClose}>
+      <div className="pm-panel" onClick={e => e.stopPropagation()}>
+        <div className="pm-header">
+          <div className="pm-title-row">
+            <h2 className="display pm-title">{project.title}</h2>
+            <button className="pm-close nb-btn secondary" onClick={onClose}>{t.work.close}</button>
+          </div>
+          <div className="pm-tags">
+            {project.tech.map((tag, i) => <span key={i} className="nb-pill">{tag}</span>)}
+          </div>
+        </div>
+
+        <div className="pm-gallery">
+          <div className="pm-img-main">
+            {imgs[imgIdx] && <img src={imgs[imgIdx].src} alt={imgs[imgIdx].caption} />}
+            {imgs.length > 1 && (
+              <>
+                <button className="pm-arrow pm-arrow-left" onClick={() => setImgIdx(i => (i - 1 + imgs.length) % imgs.length)}>←</button>
+                <button className="pm-arrow pm-arrow-right" onClick={() => setImgIdx(i => (i + 1) % imgs.length)}>→</button>
+              </>
+            )}
+          </div>
+          {imgs.length > 1 && (
+            <div className="pm-thumbs">
+              {imgs.map((img, i) => (
+                <button key={i} className={`pm-thumb ${i === imgIdx ? 'active' : ''}`} onClick={() => setImgIdx(i)}>
+                  <img src={img.src} alt={img.caption} />
+                </button>
+              ))}
+            </div>
+          )}
+          {imgs[imgIdx] && <p className="pm-caption">{imgs[imgIdx].caption}</p>}
+        </div>
+
+        <div className="pm-body">
+          <p className="pm-desc" dangerouslySetInnerHTML={{ __html: detail.description }} />
+          <div className="pm-actions">
+            {project.link && project.link !== '#' && (
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="nb-btn">{t.work.visitSite}</a>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 function Work({ t, lang }) {
   const defaultFilter = lang === 'es' ? "Todos" : "All"
   const [filter, setFilter] = useState(defaultFilter)
   const [visibleCount, setVisibleCount] = useState(4)
+  const [selected, setSelected] = useState(null)
   useEffect(() => { setFilter(lang === 'es' ? "Todos" : "All") }, [lang])
   const filterMap = { "All": "All", "Todos": "All", "AI": "AI", "IA": "AI", "LMS": "LMS", "CRM": "CRM", "Web": "Web", "Paper": "Paper", "Freelancing": "Freelancing" }
   const shown = useMemo(() => {
@@ -637,6 +791,8 @@ function Work({ t, lang }) {
     return () => { cancelAnimationFrame(raf); io?.disconnect() }
   }, [shown, visibleCount])
 
+  const openDetail = (p) => { if (p.detailSlug) setSelected(p) }
+
   return (
     <section id="work" className="work">
       <div className="wrap">
@@ -654,22 +810,31 @@ function Work({ t, lang }) {
         </div>
         <div>
           {visible.map((p, i) => (
-            <div key={p.id} className="project-row reveal" style={{ transitionDelay: `${i * 60}ms` }}>
+            <div key={p.id} className={`project-row reveal ${p.detailSlug ? 'has-detail' : ''}`} style={{ transitionDelay: `${i * 60}ms` }}>
               <div className="project-num">0{p.id}</div>
               <div className="project-main">
                 <h3>{p.title}</h3>
                 <p>{p.desc[lang]}</p>
                 <div className="project-tech">
-                  {p.tech.map((t, j) => <span key={j} className="nb-pill">{t}</span>)}
+                  {p.tech.map((tk, j) => <span key={j} className="nb-pill">{tk}</span>)}
                 </div>
                 {p.detailSlug && (
-                  <a href={`https://david-dev-portfolio-2026-3d.vercel.app/project/${p.detailSlug}`} target="_blank" rel="noopener noreferrer" className="case-study-link">
-                    {t.work.caseStudy}
-                  </a>
+                  <button className="detail-btn" onClick={() => openDetail(p)}>{t.work.viewDetail}</button>
                 )}
               </div>
-              <div className="project-visual" style={{ background: p.color, color: p.textColor }}>
-                <span style={{ position: 'relative', zIndex: 2 }}>{p.title}</span>
+              <div
+                className={`project-visual ${p.detailSlug ? 'clickable-visual' : ''}`}
+                style={{ background: p.color, color: p.textColor }}
+                onClick={() => openDetail(p)}
+              >
+                {p.detailSlug && PROJECT_DETAILS[p.detailSlug] && (
+                  <img
+                    src={PROJECT_DETAILS[p.detailSlug][lang]?.images[0]?.src}
+                    alt={p.title}
+                    className="visual-preview-img"
+                  />
+                )}
+                <span className="visual-label" style={{ position: 'relative', zIndex: 2 }}>{p.title}</span>
               </div>
               {p.link !== '#' && <a href={p.link} target="_blank" rel="noopener noreferrer" className="project-link" aria-label={`Open ${p.title}`}>↗</a>}
             </div>
@@ -683,6 +848,15 @@ function Work({ t, lang }) {
           </div>
         )}
       </div>
+
+      {selected && (
+        <ProjectModal
+          project={selected}
+          detail={PROJECT_DETAILS[selected.detailSlug]?.[lang]}
+          t={t}
+          onClose={() => setSelected(null)}
+        />
+      )}
     </section>
   )
 }

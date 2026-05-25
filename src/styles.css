@@ -748,6 +748,185 @@ section { position: relative; }
 }
 .case-study-link:hover { opacity: 0.6; }
 
+/* ===== Detail button ===== */
+.detail-btn {
+  margin-top: 12px;
+  background: var(--ink);
+  color: var(--bg);
+  border: var(--border-w) solid var(--ink);
+  box-shadow: var(--shadow-off) var(--shadow-off) 0 0 var(--primary);
+  padding: 6px 14px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.detail-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: calc(var(--shadow-off) + 2px) calc(var(--shadow-off) + 2px) 0 0 var(--primary);
+}
+
+/* ===== Visual preview image ===== */
+.project-visual {
+  position: relative;
+  overflow: hidden;
+}
+.visual-preview-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+  transition: opacity .2s ease;
+}
+.clickable-visual {
+  cursor: pointer;
+}
+.clickable-visual:hover .visual-preview-img {
+  opacity: 0.6;
+}
+.visual-label {
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== Project Modal ===== */
+.pm-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 9000;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  animation: pmFadeIn .15s ease;
+}
+@keyframes pmFadeIn { from { opacity: 0 } to { opacity: 1 } }
+
+.pm-panel {
+  background: var(--bg);
+  border: var(--border-w) solid var(--ink);
+  border-bottom: none;
+  box-shadow: 0 -8px 0 0 var(--ink);
+  width: 100%;
+  max-width: 900px;
+  max-height: 92vh;
+  overflow-y: auto;
+  padding: 32px 28px 48px;
+  animation: pmSlideUp .2s ease;
+}
+@keyframes pmSlideUp { from { transform: translateY(40px); opacity: 0 } to { transform: translateY(0); opacity: 1 } }
+
+.pm-header {
+  margin-bottom: 24px;
+}
+.pm-title-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.pm-title {
+  font-size: clamp(24px, 4vw, 40px);
+  line-height: 1;
+  margin: 0;
+}
+.pm-close {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+.pm-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Gallery */
+.pm-gallery {
+  margin-bottom: 28px;
+}
+.pm-img-main {
+  position: relative;
+  border: var(--border-w) solid var(--ink);
+  box-shadow: var(--shadow-off) var(--shadow-off) 0 0 var(--ink);
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  background: #111;
+}
+.pm-img-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.pm-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--ink);
+  color: var(--bg);
+  border: none;
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+  z-index: 2;
+  transition: background .1s;
+}
+.pm-arrow:hover { background: var(--primary); color: var(--ink); }
+.pm-arrow-left { left: 0; }
+.pm-arrow-right { right: 0; }
+.pm-thumbs {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  overflow-x: auto;
+}
+.pm-thumb {
+  flex-shrink: 0;
+  width: 80px;
+  height: 56px;
+  border: var(--border-w) solid transparent;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  background: #111;
+  transition: border-color .1s, box-shadow .1s;
+}
+.pm-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.pm-thumb.active { border-color: var(--ink); box-shadow: 3px 3px 0 0 var(--primary); }
+.pm-thumb:hover { border-color: var(--ink); }
+.pm-caption {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  opacity: 0.6;
+}
+
+/* Body */
+.pm-desc {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  white-space: pre-line;
+}
+.pm-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
 /* ===== Testimonials ===== */
 .testimonials { padding: 100px 0; border-top: var(--border-w) solid var(--ink); }
 
