@@ -1,5 +1,47 @@
 import { useState, useRef, useEffect } from 'react'
 
+function renderMd(text) {
+  const lines = text.split('\n')
+  const out = []
+  let listItems = []
+
+  const flushList = () => {
+    if (listItems.length) {
+      out.push(<ul key={`ul-${out.length}`}>{listItems}</ul>)
+      listItems = []
+    }
+  }
+
+  const parseInline = (str, key) => {
+    const parts = str.split(/(\*\*[^*]+\*\*)/g)
+    return (
+      <span key={key}>
+        {parts.map((p, i) =>
+          p.startsWith('**') && p.endsWith('**')
+            ? <strong key={i}>{p.slice(2, -2)}</strong>
+            : p
+        )}
+      </span>
+    )
+  }
+
+  lines.forEach((line, i) => {
+    const bullet = line.match(/^[\*\-]\s+(.*)/)
+    if (bullet) {
+      listItems.push(<li key={i}>{parseInline(bullet[1], i)}</li>)
+    } else {
+      flushList()
+      if (line.trim() === '') {
+        out.push(<br key={i} />)
+      } else {
+        out.push(<p key={i}>{parseInline(line, i)}</p>)
+      }
+    }
+  })
+  flushList()
+  return out
+}
+
 const SUGGESTIONS = [
   "What's your main stack?",
   "Tell me about UMI",
@@ -61,7 +103,15 @@ export default function ChatWidget({ lang = 'en' }) {
         onClick={() => setOpen((o) => !o)}
         aria-label="Open chat"
       >
-        {open ? '✕' : '💬'}
+        {open ? (
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round">
+            <line x1="3" y1="3" x2="15" y2="15"/><line x1="15" y1="3" x2="3" y2="15"/>
+          </svg>
+        ) : (
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        )}
       </button>
 
       {open && (
@@ -74,7 +124,7 @@ export default function ChatWidget({ lang = 'en' }) {
           <div className="chat-messages">
             {messages.map((m, i) => (
               <div key={i} className={`chat-msg chat-msg--${m.role}`}>
-                {m.content}
+                {m.role === 'assistant' ? renderMd(m.content) : m.content}
               </div>
             ))}
             {loading && (
