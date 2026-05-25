@@ -751,22 +751,22 @@ section { position: relative; }
 /* ===== Detail button ===== */
 .detail-btn {
   margin-top: 12px;
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--primary);
+  color: #111;
   border: var(--border-w) solid var(--ink);
-  box-shadow: var(--shadow-off) var(--shadow-off) 0 0 var(--primary);
-  padding: 6px 14px;
+  box-shadow: var(--shadow-off) var(--shadow-off) 0 0 var(--ink);
+  padding: 8px 18px;
   font-family: inherit;
   font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  font-weight: 900;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   cursor: pointer;
   transition: transform .12s ease, box-shadow .12s ease;
 }
 .detail-btn:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: calc(var(--shadow-off) + 2px) calc(var(--shadow-off) + 2px) 0 0 var(--primary);
+  transform: translate(-3px, -3px);
+  box-shadow: calc(var(--shadow-off) + 3px) calc(var(--shadow-off) + 3px) 0 0 var(--ink);
 }
 
 /* ===== Visual preview image ===== */
@@ -809,7 +809,7 @@ section { position: relative; }
 @keyframes pmFadeIn { from { opacity: 0 } to { opacity: 1 } }
 
 .pm-panel {
-  background: var(--bg);
+  background: var(--surface);
   border: var(--border-w) solid var(--ink);
   border-bottom: none;
   box-shadow: 0 -8px 0 0 var(--ink);
@@ -871,7 +871,7 @@ section { position: relative; }
   top: 50%;
   transform: translateY(-50%);
   background: var(--ink);
-  color: var(--bg);
+  color: var(--surface);
   border: none;
   width: 44px;
   height: 44px;
