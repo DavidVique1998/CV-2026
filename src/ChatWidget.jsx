@@ -117,7 +117,6 @@ export default function ChatWidget({ lang = 'en' }) {
       {open && (
         <div className="chat-panel">
           <div className="chat-header">
-            <span className="chat-header-dot" />
             <strong>Ask David's AI</strong>
           </div>
 
