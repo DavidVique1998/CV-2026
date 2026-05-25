@@ -212,7 +212,8 @@ const PROJECTS = [
     id: 4, title: "N8N Relatividad IA", cat: "AI",
     desc: { en: "Multiple self-hosted N8N chatbots, one per customer — orchestrating LLM conversations with isolated pipelines and guardrails.", es: "N8N multi-cliente auto-hospedado con chatbots aislados por cliente que orquestan conversaciones LLM." },
     tech: ["N8N", "Docker", "LangChain", "Evolution API"],
-    color: "#000000", textColor: "#ffffff", link: "https://www.relatividadia.com/"
+    color: "#000000", textColor: "#ffffff", link: "https://www.relatividadia.com/",
+    previewImg: "/projects/relatividad/relatividad-0.jpg"
   },
   {
     id: 5, title: "Entropía N8N Studio", cat: "Freelancing",
@@ -236,7 +237,8 @@ const PROJECTS = [
     id: 7, title: "Fenix Conocimiento", cat: "LMS",
     desc: { en: "Learning management system for Fenix's internal knowledge base — custom theme, course catalog, and ChatBot LLM integration.", es: "LMS para la base de conocimiento interna de Fenix — tema personalizado, catálogo de cursos e integración ChatBot LLM." },
     tech: ["Moodle", "PHP", "MySQL", "Grafana"],
-    color: "#111111", textColor: "#ffffff", link: "https://conocimiento.mysistemafenix.com"
+    color: "#111111", textColor: "#ffffff", link: "https://conocimiento.mysistemafenix.com",
+    previewImg: "/projects/fenix/fenix-0.jpg"
   },
   {
     id: 8, title: "Taurhus Capacitaciones", cat: "LMS",
@@ -827,9 +829,13 @@ function Work({ t, lang }) {
                 style={{ background: p.color, color: p.textColor }}
                 onClick={() => openDetail(p)}
               >
-                {p.detailSlug && PROJECT_DETAILS[p.detailSlug] && (
+                {(p.detailSlug && PROJECT_DETAILS[p.detailSlug]
+                  ? PROJECT_DETAILS[p.detailSlug][lang]?.images[0]?.src
+                  : p.previewImg) && (
                   <img
-                    src={PROJECT_DETAILS[p.detailSlug][lang]?.images[0]?.src}
+                    src={p.detailSlug && PROJECT_DETAILS[p.detailSlug]
+                      ? PROJECT_DETAILS[p.detailSlug][lang]?.images[0]?.src
+                      : p.previewImg}
                     alt={p.title}
                     className="visual-preview-img"
                   />
