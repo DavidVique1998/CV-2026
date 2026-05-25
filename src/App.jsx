@@ -54,7 +54,8 @@ const COPY = {
       desc: "From enterprise AI systems to learning platforms — here's what I've been shipping.",
       filters: ["All", "AI", "LMS", "CRM", "Web", "Paper", "Freelancing"],
       showMore: "Show more",
-      showLess: "Show less"
+      showLess: "Show less",
+      caseStudy: "Case study ↗"
     },
     testimonials: {
       label: "/ 03 — kind words",
@@ -128,7 +129,8 @@ const COPY = {
       desc: "Desde sistemas IA empresariales hasta plataformas de aprendizaje.",
       filters: ["Todos", "IA", "LMS", "CRM", "Web", "Paper", "Freelancing"],
       showMore: "Ver más",
-      showLess: "Ver menos"
+      showLess: "Ver menos",
+      caseStudy: "Caso detallado ↗"
     },
     testimonials: {
       label: "/ 03 — testimonios",
@@ -184,19 +186,19 @@ const PROJECTS = [
     id: 1, title: "Benefit Match Center", cat: "Web",
     desc: { en: "Section 125 benefits platform — React 19 SPA on AWS S3+CloudFront, two serverless Lambda functions for form handling and a streaming AI chat widget, with Resend email delivery.", es: "Plataforma de beneficios Section 125 — SPA React 19 en AWS S3+CloudFront, dos funciones Lambda serverless para formularios y chat IA en streaming, con entrega de email vía Resend." },
     tech: ["React 19", "AWS Lambda", "SST", "CloudFront", "Claude API"],
-    color: "#0F1A2E", textColor: "#C49B3C", link: "https://benefitmatchcenter.com/"
+    color: "#0F1A2E", textColor: "#C49B3C", link: "https://benefitmatchcenter.com/", detailSlug: "bmc"
   },
   {
     id: 2, title: "UMI — Unified Meeting Intel", cat: "AI",
     desc: { en: "Multi-platform meeting integration for Google Meet, Zoom, and Teams — transcription analysis, third-party transcript uploads, AI chat flows, and real-time statistics.", es: "Integración de reuniones multi-plataforma (Meet, Zoom, Teams) con análisis de transcripciones, carga de transcripts externos, flujos de chat IA y estadísticas en tiempo real." },
     tech: ["NestJS", "Next.js", "AWS Lambda", "OpenAI", "PostgreSQL"],
-    color: "#1C1D20", textColor: "#6366F1", link: "https://d9shobjqv3rms.cloudfront.net/"
+    color: "#1C1D20", textColor: "#6366F1", link: "https://d9shobjqv3rms.cloudfront.net/", detailSlug: "umi"
   },
   {
     id: 3, title: "Commission Tracker (CT)", cat: "AI",
     desc: { en: "Serverless analyzer for 52 companies with dynamic prompts, PDF OCR, and queue-based flows for commission data validation. Deployed on AWS Lambda with GitHub Actions CI/CD.", es: "Analizador serverless para 52 empresas con prompts dinámicos, OCR de PDF y flujos de cola para validación de comisiones. Desplegado en AWS Lambda con CI/CD en GitHub Actions." },
     tech: ["AWS Lambda", "OpenAI", "OCR", "GitHub Actions", "Node.js"],
-    color: "#121315", textColor: "#0EA5E9", link: "#"
+    color: "#121315", textColor: "#0EA5E9", link: "#", detailSlug: "ct"
   },
   {
     id: 4, title: "N8N Relatividad IA", cat: "AI",
@@ -208,7 +210,7 @@ const PROJECTS = [
     id: 5, title: "Entropía N8N Studio", cat: "Freelancing",
     desc: { en: "AI automation agency delivering end-to-end voice and chat pipelines. N8N agentic flows, GoHighLevel embedded apps, ElevenLabs voice cloning, Twilio SMS/voice, Retell AI multi-turn voice agents, and WhatsApp lead funnels connected to CRM webhooks.", es: "Agencia de automatización IA con pipelines de voz y chat end-to-end. Flujos agénticos N8N, apps embebidas en GoHighLevel, voz ElevenLabs, SMS/voz Twilio, agentes de voz Retell AI y funnels WhatsApp conectados a CRM." },
     tech: ["N8N", "GoHighLevel", "ElevenLabs", "Twilio", "Retell AI", "WhatsApp API"],
-    color: "#1a0533", textColor: "#C6F24E", link: "https://entropia-n8n-studio.vercel.app/en"
+    color: "#1a0533", textColor: "#C6F24E", link: "https://entropia-n8n-studio.vercel.app/en", detailSlug: "entropia"
   },
   {
     id: 10, title: "Atiende — CRM WhatsApp", cat: "CRM",
@@ -220,7 +222,7 @@ const PROJECTS = [
     id: 6, title: "Qubex LLM", cat: "AI",
     desc: { en: "A cutting-edge assistant exposing large language models through a polished chat UI.", es: "Asistente de punta que expone LLMs a través de una UI de chat pulida." },
     tech: ["Next.js", "React", "OpenAI", "Vercel"],
-    color: "#0B1121", textColor: "#A78BFA", link: "https://qubex-global.vercel.app/"
+    color: "#0B1121", textColor: "#A78BFA", link: "https://qubex-global.vercel.app/", detailSlug: "qubex"
   },
   {
     id: 7, title: "Fenix Conocimiento", cat: "LMS",
@@ -657,6 +659,11 @@ function Work({ t, lang }) {
                 <div className="project-tech">
                   {p.tech.map((t, j) => <span key={j} className="nb-pill">{t}</span>)}
                 </div>
+                {p.detailSlug && (
+                  <a href={`https://david-dev-portfolio-2026-3d.vercel.app/project/${p.detailSlug}`} target="_blank" rel="noopener noreferrer" className="case-study-link">
+                    {t.work.caseStudy}
+                  </a>
+                )}
               </div>
               <div className="project-visual" style={{ background: p.color, color: p.textColor }}>
                 <span style={{ position: 'relative', zIndex: 2 }}>{p.title}</span>

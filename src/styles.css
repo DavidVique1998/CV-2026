@@ -733,6 +733,21 @@ section { position: relative; }
   background: var(--tertiary);
 }
 
+.case-study-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--ink);
+  border-bottom: 2px solid var(--ink);
+  padding-bottom: 1px;
+  transition: opacity .15s ease;
+}
+.case-study-link:hover { opacity: 0.6; }
+
 /* ===== Testimonials ===== */
 .testimonials { padding: 100px 0; border-top: var(--border-w) solid var(--ink); }
 
