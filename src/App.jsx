@@ -4,6 +4,7 @@ import {
   TweakColor, TweakSlider, TweakRadio
 } from './TweaksPanel'
 import ThreeScene from './ThreeScene'
+import ChatWidget from './ChatWidget'
 
 const TWEAK_DEFAULTS = {
   primary: '#C6F24E',
@@ -1398,6 +1399,7 @@ export default function App() {
       <Paper t={t} />
       <Contact t={t} showToast={showToast} />
       <div className={`toast ${toast.show ? 'show' : ''}`}>{toast.msg}</div>
+      <ChatWidget lang={lang} />
       <TweaksPanel title="Tweaks">
         <TweakSection label="Theme" />
         <TweakToggle label="Dark mode" value={!!tweaks.dark} onChange={(v) => setTweak('dark', v)} />
