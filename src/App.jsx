@@ -40,6 +40,7 @@ const COPY = {
       sub: "Hi! I'm David — a multi-disciplinary developer and user-experience enthusiast based in Ecuador. I turn rough concepts into shippable, opinionated software.",
       cta1: "Show my work",
       cta2: "Email me",
+      cta3: "3D Portfolio ↗",
       sticker: "Let's\nbuild\nsomething",
       meta: [
         { k: "5+", v: "yrs shipping" },
@@ -115,6 +116,7 @@ const COPY = {
       sub: "¡Hola! Soy David — desarrollador multidisciplinario y entusiasta de la experiencia de usuario, radicado en Ecuador. Convierto conceptos difusos en software funcional y con carácter.",
       cta1: "Ver proyectos",
       cta2: "Escríbeme",
+      cta3: "Portfolio 3D ↗",
       sticker: "Hagamos\nalgo\njuntos",
       meta: [
         { k: "5+", v: "años desarrollando" },
@@ -579,6 +581,7 @@ function Hero({ t }) {
         <div className="hero-actions">
           <a href="#work" className="nb-btn">→ {t.hero.cta1}</a>
           <a href="#contact" className="nb-btn secondary">✉ {t.hero.cta2}</a>
+          <a href="https://david-dev-portfolio-2026-3d.vercel.app" target="_blank" rel="noopener noreferrer" className="nb-btn secondary">{t.hero.cta3}</a>
         </div>
         <div className="hero-meta">
           {t.hero.meta.map((m, i) => (
