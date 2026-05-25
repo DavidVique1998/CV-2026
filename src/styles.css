@@ -809,7 +809,7 @@ section { position: relative; }
 @keyframes pmFadeIn { from { opacity: 0 } to { opacity: 1 } }
 
 .pm-panel {
-  background: var(--surface);
+  background: var(--surface, #F5F3EC);
   border: var(--border-w) solid var(--ink);
   border-bottom: none;
   box-shadow: 0 -8px 0 0 var(--ink);
@@ -870,20 +870,26 @@ section { position: relative; }
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: var(--ink);
-  color: var(--surface);
-  border: none;
-  width: 44px;
-  height: 44px;
-  font-size: 20px;
+  background: var(--primary);
+  color: #111;
+  border: 3px solid #111;
+  box-shadow: 4px 4px 0 0 #111;
+  width: 52px;
+  height: 52px;
+  font-size: 22px;
   font-weight: 900;
   cursor: pointer;
-  z-index: 2;
-  transition: background .1s;
+  z-index: 10;
+  transition: transform .1s ease, box-shadow .1s ease;
+  display: grid;
+  place-items: center;
 }
-.pm-arrow:hover { background: var(--primary); color: var(--ink); }
-.pm-arrow-left { left: 0; }
-.pm-arrow-right { right: 0; }
+.pm-arrow:hover {
+  transform: translateY(-50%) translate(-2px, -2px);
+  box-shadow: 6px 6px 0 0 #111;
+}
+.pm-arrow-left { left: 12px; }
+.pm-arrow-right { right: 12px; }
 .pm-thumbs {
   display: flex;
   gap: 8px;
