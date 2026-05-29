@@ -45,7 +45,7 @@ const COPY = {
       sticker: "Let's\nbuild\nsomething",
       meta: [
         { k: "5+", v: "yrs shipping" },
-        { k: "9+", v: "products live" },
+        { k: "10+", v: "products live" },
         { k: "1", v: "springer paper" },
         { k: "EC", v: "based in Ecuador" }
       ]
@@ -124,7 +124,7 @@ const COPY = {
       sticker: "Hagamos\nalgo\njuntos",
       meta: [
         { k: "5+", v: "años desarrollando" },
-        { k: "9+", v: "productos en vivo" },
+        { k: "10+", v: "productos en vivo" },
         { k: "1", v: "paper springer" },
         { k: "EC", v: "desde Ecuador" }
       ]
@@ -252,6 +252,12 @@ const PROJECTS = [
     desc: { en: "Real-time shooting simulator with body tracking — Unity 3D, Kinect 2, OpenCV, and ESP32 hardware integration. Published at BICA 2023 (Springer, Volume 1130).", es: "Simulador de tiro en tiempo real con rastreo corporal — Unity 3D, Kinect 2, OpenCV e integración ESP32. Publicado en BICA 2023 (Springer, Volumen 1130)." },
     tech: ["Unity", "OpenCV", "Kinect 2", "ESP32", "Python"],
     color: "#111111", textColor: "#C6F24E", link: "#paper"
+  },
+  {
+    id: 11, title: "Dental Estudio Tenerife", cat: "Web",
+    desc: { en: "Unsolicited redesign proposal for a dental clinic in Tenerife, Spain. Next.js 16, Three.js immersive visuals, Motion animations, and an AI chat assistant (Gemini Flash) for appointments and treatment queries — delivered pro bono.", es: "Propuesta de rediseño gratuita para una clínica dental en Tenerife. Next.js 16, visuales Three.js, animaciones Motion y chat IA (Gemini Flash) para citas y consultas de tratamientos — entregada sin costo." },
+    tech: ["Next.js", "React 19", "Three.js", "Gemini", "Vercel"],
+    color: "#0d2b45", textColor: "#7ecfff", link: "https://onmidental.vercel.app/", detailSlug: "onmidental"
   }
 ]
 
@@ -339,6 +345,22 @@ const PROJECT_DETAILS = {
         { src: "/projects/qubex/qubex-1.jpg", caption: "Funciones del modelo" },
       ]
     }
+  },
+  onmidental: {
+    en: {
+      description: "Pro bono redesign proposal for Dental Estudio Tenerife, a dental clinic in Tenerife, Spain run by Dr. Jaime Zárate. The original site was outdated — this proposal delivers a modern, appointment-focused experience built from scratch.<br/><br/>Next.js 16 App Router, React 19, Three.js for immersive 3D visuals, Motion for scroll-driven animations, and an AI chat assistant powered by Gemini Flash that answers patient questions about treatments, clinic locations, and appointment booking. Delivered at no charge as a self-initiated portfolio project.",
+      images: [
+        { src: "/projects/onmidental/onmidental-0.jpg", caption: "Hero section" },
+        { src: "/projects/onmidental/onmidental-1.jpg", caption: "Full page view" },
+      ]
+    },
+    es: {
+      description: "Propuesta de rediseño pro bono para Dental Estudio Tenerife, clínica dental en Tenerife, España, a cargo del Dr. Jaime Zárate. El sitio original estaba desactualizado — esta propuesta entrega una experiencia moderna centrada en citas, construida desde cero.<br/><br/>Next.js 16 App Router, React 19, Three.js para visuales 3D inmersivos, Motion para animaciones de scroll y un asistente de chat IA con Gemini Flash que responde preguntas de pacientes sobre tratamientos, sedes y reserva de citas. Entregada sin costo como proyecto de portafolio de iniciativa propia.",
+      images: [
+        { src: "/projects/onmidental/onmidental-0.jpg", caption: "Sección hero" },
+        { src: "/projects/onmidental/onmidental-1.jpg", caption: "Vista completa" },
+      ]
+    }
   }
 }
 
@@ -408,6 +430,19 @@ const TESTIMONIALS = [
 const STACK = ["AWS Lambda", "Docker", "GitHub Actions", "Next.js", "React", "Node.js", "NestJS", "N8N", "LangChain", "OpenAI", "PostgreSQL", "Qdrant", "MongoDB", "Unity", "Cursor", "Moodle"]
 
 const EXPERIENCES = [
+  {
+    badge: "OD",
+    category: "freelancing",
+    title: { en: "Web Designer — Pro Bono Proposal", es: "Diseñador Web — Propuesta Pro Bono" },
+    where: "Dental Estudio Tenerife",
+    location: "Tenerife, Spain",
+    period: "2025",
+    link: "https://onmidental.vercel.app/",
+    desc: {
+      en: "Unsolicited redesign proposal for a dental clinic in Tenerife, Spain. Rebuilt with Next.js 16, Three.js immersive visuals, Motion scroll animations, and an AI chat assistant (Gemini Flash) for patient queries — delivered at no charge as a self-initiated portfolio project.",
+      es: "Propuesta de rediseño no solicitada para una clínica dental en Tenerife. Next.js 16, visuales Three.js, animaciones Motion y chat IA (Gemini Flash) para consultas de pacientes — entregada sin costo como iniciativa de portafolio."
+    }
+  },
   {
     badge: "EN",
     category: "freelancing",
