@@ -260,7 +260,13 @@ const PROJECTS = [
     color: "#0d2b45", textColor: "#7ecfff", link: "https://onmidental.vercel.app/", detailSlug: "onmidental"
   },
   {
-    id: 12, title: "Disfrazarte", cat: "Web",
+    id: 12, title: "Clínica Dental Goyanc", cat: "Web",
+    desc: { en: "Full website for a dental clinic in Madrid, Spain. Dark luxury aesthetic with gold accents, scroll-reveal text animations, an AI chat assistant for patient queries, and a WhatsApp conversion button — built with Next.js 15 and Tailwind CSS.", es: "Sitio web completo para una clínica dental en Madrid, España. Estética oscura de lujo con acentos dorados, animaciones de texto al scroll, asistente de chat IA para consultas y botón de conversión WhatsApp — Next.js 15 y Tailwind CSS." },
+    tech: ["Next.js 15", "Tailwind CSS", "Vercel"],
+    color: "#060810", textColor: "#c8a97e", link: "https://clinicadentalgoyanc.vercel.app/", detailSlug: "onmidental2"
+  },
+  {
+    id: 13, title: "Disfrazarte", cat: "Web",
     desc: { en: "Costume shop landing page for Disfrazarte — Ambato & Riobamba, Ecuador. Scrollytelling hero with clip-path parallax, 3-panel horizontal scroll, bento gallery catalog, and WhatsApp CTA flows. Built with Next.js 16, Tailwind v4, and Framer Motion.", es: "Landing page para Disfrazarte — tienda de trajes en Ambato y Riobamba, Ecuador. Hero scrollytelling con paralaje clip-path, scroll horizontal en 3 paneles, galería bento del catálogo y flujos de CTA por WhatsApp. Next.js 16, Tailwind v4 y Framer Motion." },
     tech: ["Next.js 16", "Tailwind v4", "Framer Motion", "Vercel"],
     color: "#0a0a1a", textColor: "#1baeea", link: "https://disfrazarte-delta.vercel.app", detailSlug: "disfrazarte"
@@ -365,6 +371,22 @@ const PROJECT_DETAILS = {
       images: [
         { src: "/projects/onmidental/onmidental-0.jpg", caption: "Sección hero" },
         { src: "/projects/onmidental/onmidental-1.jpg", caption: "Vista completa" },
+      ]
+    }
+  },
+  onmidental2: {
+    en: {
+      description: "Full website for Clínica Dental Goyanc (Núñez-Cobos Odontología), a dental clinic in Madrid, Spain. Dark luxury aesthetic with gold accents, scroll-reveal text animations powered by Framer Motion, an AI chat assistant for patient queries, and a WhatsApp conversion button — delivered as a self-initiated portfolio project.<br/><br/>Built with Next.js 15, Tailwind CSS, and deployed on Vercel.",
+      images: [
+        { src: "/projects/onmidental2/onmidental2-0.jpg", caption: "Hero section" },
+        { src: "/projects/onmidental2/onmidental2-1.jpg", caption: "Full page view" },
+      ]
+    },
+    es: {
+      description: "Sitio web completo para Clínica Dental Goyanc (Núñez-Cobos Odontología), clínica dental en Madrid, España. Estética oscura de lujo con acentos dorados, animaciones de revelación de texto con Framer Motion, asistente de chat IA para consultas de pacientes y botón de conversión WhatsApp — entregado como proyecto de portafolio de iniciativa propia.<br/><br/>Next.js 15, Tailwind CSS, desplegado en Vercel.",
+      images: [
+        { src: "/projects/onmidental2/onmidental2-0.jpg", caption: "Sección hero" },
+        { src: "/projects/onmidental2/onmidental2-1.jpg", caption: "Vista completa" },
       ]
     }
   },
@@ -478,6 +500,19 @@ const EXPERIENCES = [
     desc: {
       en: "Unsolicited redesign proposal for a dental clinic in Tenerife, Spain. Rebuilt with Next.js 16, Three.js immersive visuals, Motion scroll animations, and an AI chat assistant (Gemini Flash) for patient queries — delivered at no charge as a self-initiated portfolio project.",
       es: "Propuesta de rediseño no solicitada para una clínica dental en Tenerife. Next.js 16, visuales Three.js, animaciones Motion y chat IA (Gemini Flash) para consultas de pacientes — entregada sin costo como iniciativa de portafolio."
+    }
+  },
+  {
+    badge: "G2",
+    category: "freelancing",
+    title: { en: "Web Developer — Portfolio Project", es: "Desarrollador Web — Proyecto de Portafolio" },
+    where: "Clínica Dental Goyanc",
+    location: "Madrid, Spain",
+    period: "2025",
+    link: "https://clinicadentalgoyanc.vercel.app/",
+    desc: {
+      en: "Full website for a dental clinic in Madrid. Dark luxury aesthetic with gold accents, scroll-reveal animations, AI chat assistant for patient queries, and WhatsApp conversion flow. Built with Next.js 15 and Tailwind CSS — self-initiated portfolio project.",
+      es: "Sitio web completo para clínica dental en Madrid. Estética oscura de lujo con acentos dorados, animaciones de revelación, asistente de chat IA y flujo de conversión WhatsApp. Next.js 15 y Tailwind CSS — proyecto de portafolio de iniciativa propia."
     }
   },
   {
