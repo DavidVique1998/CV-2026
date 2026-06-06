@@ -254,10 +254,10 @@ const PROJECTS = [
     color: "#111111", textColor: "#C6F24E", link: "#paper"
   },
   {
-    id: 11, title: "Dental Estudio Tenerife", cat: "Web",
-    desc: { en: "Unsolicited redesign proposal for a dental clinic in Tenerife, Spain. Next.js 16, Three.js immersive visuals, Motion animations, and an AI chat assistant (Gemini Flash) for appointments and treatment queries — delivered pro bono.", es: "Propuesta de rediseño gratuita para una clínica dental en Tenerife. Next.js 16, visuales Three.js, animaciones Motion y chat IA (Gemini Flash) para citas y consultas de tratamientos — entregada sin costo." },
-    tech: ["Next.js", "React 19", "Three.js", "Gemini", "Vercel"],
-    color: "#0d2b45", textColor: "#7ecfff", link: "https://onmidental.vercel.app/", detailSlug: "onmidental"
+    id: 11, title: "Disfrazarte", cat: "Web",
+    desc: { en: "Costume shop landing page for Disfrazarte — Ambato & Riobamba, Ecuador. Scrollytelling hero with clip-path parallax, 3-panel horizontal scroll, bento gallery catalog, and WhatsApp CTA flows. Built with Next.js 16, Tailwind v4, and Framer Motion.", es: "Landing page para Disfrazarte — tienda de trajes en Ambato y Riobamba, Ecuador. Hero scrollytelling con paralaje clip-path, scroll horizontal en 3 paneles, galería bento del catálogo y flujos de CTA por WhatsApp. Next.js 16, Tailwind v4 y Framer Motion." },
+    tech: ["Next.js 16", "Tailwind v4", "Framer Motion", "Vercel"],
+    color: "#0a0a1a", textColor: "#1baeea", link: "https://disfrazarte-delta.vercel.app", detailSlug: "disfrazarte"
   },
   {
     id: 12, title: "Clínica Dental Goyanc", cat: "Web",
@@ -266,10 +266,10 @@ const PROJECTS = [
     color: "#060810", textColor: "#c8a97e", link: "https://clinicadentalgoyanc.vercel.app/", detailSlug: "onmidental2"
   },
   {
-    id: 13, title: "Disfrazarte", cat: "Web",
-    desc: { en: "Costume shop landing page for Disfrazarte — Ambato & Riobamba, Ecuador. Scrollytelling hero with clip-path parallax, 3-panel horizontal scroll, bento gallery catalog, and WhatsApp CTA flows. Built with Next.js 16, Tailwind v4, and Framer Motion.", es: "Landing page para Disfrazarte — tienda de trajes en Ambato y Riobamba, Ecuador. Hero scrollytelling con paralaje clip-path, scroll horizontal en 3 paneles, galería bento del catálogo y flujos de CTA por WhatsApp. Next.js 16, Tailwind v4 y Framer Motion." },
-    tech: ["Next.js 16", "Tailwind v4", "Framer Motion", "Vercel"],
-    color: "#0a0a1a", textColor: "#1baeea", link: "https://disfrazarte-delta.vercel.app", detailSlug: "disfrazarte"
+    id: 13, title: "Dental Estudio Tenerife", cat: "Web",
+    desc: { en: "Unsolicited redesign proposal for a dental clinic in Tenerife, Spain. Next.js 16, Three.js immersive visuals, Motion animations, and an AI chat assistant (Gemini Flash) for appointments and treatment queries — delivered pro bono.", es: "Propuesta de rediseño gratuita para una clínica dental en Tenerife. Next.js 16, visuales Three.js, animaciones Motion y chat IA (Gemini Flash) para citas y consultas de tratamientos — entregada sin costo." },
+    tech: ["Next.js", "React 19", "Three.js", "Gemini", "Vercel"],
+    color: "#0d2b45", textColor: "#7ecfff", link: "https://onmidental.vercel.app/", detailSlug: "onmidental"
   }
 ]
 
