@@ -192,84 +192,84 @@ const COPY = {
 
 const PROJECTS = [
   {
-    id: 1, title: "Benefit Match Center", cat: "Web",
+    id: 1, title: "Disfrazarte", cat: "Web",
+    desc: { en: "Costume shop landing page for Disfrazarte — Ambato & Riobamba, Ecuador. Scrollytelling hero with clip-path parallax, 3-panel horizontal scroll, bento gallery catalog, and WhatsApp CTA flows. Built with Next.js 16, Tailwind v4, and Framer Motion.", es: "Landing page para Disfrazarte — tienda de trajes en Ambato y Riobamba, Ecuador. Hero scrollytelling con paralaje clip-path, scroll horizontal en 3 paneles, galería bento del catálogo y flujos de CTA por WhatsApp. Next.js 16, Tailwind v4 y Framer Motion." },
+    tech: ["Next.js 16", "Tailwind v4", "Framer Motion", "Vercel"],
+    color: "#0a0a1a", textColor: "#1baeea", link: "https://disfrazarte-delta.vercel.app", detailSlug: "disfrazarte"
+  },
+  {
+    id: 2, title: "Clínica Dental Goyanc", cat: "Web",
+    desc: { en: "Full website for a dental clinic in Madrid, Spain. Dark luxury aesthetic with gold accents, scroll-reveal text animations, an AI chat assistant for patient queries, and a WhatsApp conversion button — built with Next.js 15 and Tailwind CSS.", es: "Sitio web completo para una clínica dental en Madrid, España. Estética oscura de lujo con acentos dorados, animaciones de texto al scroll, asistente de chat IA para consultas y botón de conversión WhatsApp — Next.js 15 y Tailwind CSS." },
+    tech: ["Next.js 15", "Tailwind CSS", "Vercel"],
+    color: "#060810", textColor: "#c8a97e", link: "https://clinicadentalgoyanc.vercel.app/", detailSlug: "onmidental2"
+  },
+  {
+    id: 3, title: "Dental Estudio Tenerife", cat: "Web",
+    desc: { en: "Unsolicited redesign proposal for a dental clinic in Tenerife, Spain. Next.js 16, Three.js immersive visuals, Motion animations, and an AI chat assistant (Gemini Flash) for appointments and treatment queries — delivered pro bono.", es: "Propuesta de rediseño gratuita para una clínica dental en Tenerife. Next.js 16, visuales Three.js, animaciones Motion y chat IA (Gemini Flash) para citas y consultas de tratamientos — entregada sin costo." },
+    tech: ["Next.js", "React 19", "Three.js", "Gemini", "Vercel"],
+    color: "#0d2b45", textColor: "#7ecfff", link: "https://onmidental.vercel.app/", detailSlug: "onmidental"
+  },
+  {
+    id: 4, title: "Benefit Match Center", cat: "Web",
     desc: { en: "Section 125 benefits platform — React 19 SPA on AWS S3+CloudFront, two serverless Lambda functions for form handling and a streaming AI chat widget, with Resend email delivery.", es: "Plataforma de beneficios Section 125 — SPA React 19 en AWS S3+CloudFront, dos funciones Lambda serverless para formularios y chat IA en streaming, con entrega de email vía Resend." },
     tech: ["React 19", "AWS Lambda", "SST", "CloudFront", "Claude API"],
     color: "#0F1A2E", textColor: "#C49B3C", link: "https://benefitmatchcenter.com/", detailSlug: "bmc"
   },
   {
-    id: 2, title: "UMI — Unified Meeting Intel", cat: "AI",
+    id: 5, title: "UMI — Unified Meeting Intel", cat: "AI",
     desc: { en: "Multi-platform meeting integration for Google Meet, Zoom, and Teams — transcription analysis, third-party transcript uploads, AI chat flows, and real-time statistics.", es: "Integración de reuniones multi-plataforma (Meet, Zoom, Teams) con análisis de transcripciones, carga de transcripts externos, flujos de chat IA y estadísticas en tiempo real." },
     tech: ["NestJS", "Next.js", "AWS Lambda", "OpenAI", "PostgreSQL"],
     color: "#1C1D20", textColor: "#6366F1", link: "https://d9shobjqv3rms.cloudfront.net/", detailSlug: "umi"
   },
   {
-    id: 3, title: "Commission Tracker (CT)", cat: "AI",
+    id: 6, title: "Commission Tracker (CT)", cat: "AI",
     desc: { en: "Serverless analyzer for 52 companies with dynamic prompts, PDF OCR, and queue-based flows for commission data validation. Deployed on AWS Lambda with GitHub Actions CI/CD.", es: "Analizador serverless para 52 empresas con prompts dinámicos, OCR de PDF y flujos de cola para validación de comisiones. Desplegado en AWS Lambda con CI/CD en GitHub Actions." },
     tech: ["AWS Lambda", "OpenAI", "OCR", "GitHub Actions", "Node.js"],
     color: "#121315", textColor: "#0EA5E9", link: "#", detailSlug: "ct"
   },
   {
-    id: 4, title: "N8N Relatividad IA", cat: "AI",
+    id: 7, title: "N8N Relatividad IA", cat: "AI",
     desc: { en: "Multiple self-hosted N8N chatbots, one per customer — orchestrating LLM conversations with isolated pipelines and guardrails.", es: "N8N multi-cliente auto-hospedado con chatbots aislados por cliente que orquestan conversaciones LLM." },
     tech: ["N8N", "Docker", "LangChain", "Evolution API"],
     color: "#000000", textColor: "#ffffff", link: "https://www.relatividadia.com/",
     previewImg: "/projects/relatividad/relatividad-0.jpg"
   },
   {
-    id: 5, title: "Entropía N8N Studio", cat: "Freelancing",
+    id: 8, title: "Entropía N8N Studio", cat: "Freelancing",
     desc: { en: "AI automation agency delivering end-to-end voice and chat pipelines. N8N agentic flows, GoHighLevel embedded apps, ElevenLabs voice cloning, Twilio SMS/voice, Retell AI multi-turn voice agents, and WhatsApp lead funnels connected to CRM webhooks.", es: "Agencia de automatización IA con pipelines de voz y chat end-to-end. Flujos agénticos N8N, apps embebidas en GoHighLevel, voz ElevenLabs, SMS/voz Twilio, agentes de voz Retell AI y funnels WhatsApp conectados a CRM." },
     tech: ["N8N", "GoHighLevel", "ElevenLabs", "Twilio", "Retell AI", "WhatsApp API"],
     color: "#1a0533", textColor: "#C6F24E", link: "https://entropia-n8n-studio.vercel.app/en", detailSlug: "entropia"
   },
   {
-    id: 10, title: "Atiende — CRM WhatsApp", cat: "CRM",
+    id: 9, title: "Atiende — CRM WhatsApp", cat: "CRM",
     desc: { en: "WhatsApp ticketing CRM wired into N8N automations — full customer lifecycle from first message to resolution.", es: "CRM de tickets WhatsApp conectado a N8N — ciclo completo del cliente desde el primer mensaje hasta la resolución." },
     tech: ["Next.js", "N8N", "Appwrite", "WhatsApp API"],
     color: "#C6F24E", textColor: "#111111", link: "#"
   },
   {
-    id: 6, title: "Qubex LLM", cat: "AI",
+    id: 10, title: "Qubex LLM", cat: "AI",
     desc: { en: "A cutting-edge assistant exposing large language models through a polished chat UI.", es: "Asistente de punta que expone LLMs a través de una UI de chat pulida." },
     tech: ["Next.js", "React", "OpenAI", "Vercel"],
     color: "#0B1121", textColor: "#A78BFA", link: "https://qubex-global.vercel.app/", detailSlug: "qubex"
   },
   {
-    id: 7, title: "Fenix Conocimiento", cat: "LMS",
+    id: 11, title: "Fenix Conocimiento", cat: "LMS",
     desc: { en: "Learning management system for Fenix's internal knowledge base — custom theme, course catalog, and ChatBot LLM integration.", es: "LMS para la base de conocimiento interna de Fenix — tema personalizado, catálogo de cursos e integración ChatBot LLM." },
     tech: ["Moodle", "PHP", "MySQL", "Grafana"],
     color: "#111111", textColor: "#ffffff", link: "https://conocimiento.mysistemafenix.com",
     previewImg: "/projects/fenix/fenix-0.jpg"
   },
   {
-    id: 8, title: "Taurhus Capacitaciones", cat: "LMS",
+    id: 12, title: "Taurhus Capacitaciones", cat: "LMS",
     desc: { en: "Full LMS for online courses with custom theme, enrollment flows, certificates, and Laravel Mix Vue.js integrations.", es: "LMS completo para cursos en línea con tema personalizado, flujos de matrícula, certificados e integraciones Laravel Mix Vue.js." },
     tech: ["Moodle", "Laravel", "Vue.js", "MySQL", "PHP"],
     color: "#2D1B69", textColor: "#ffffff", link: "https://taurhus.com.ec"
   },
   {
-    id: 9, title: "Shooting Range Simulator", cat: "Paper",
+    id: 13, title: "Shooting Range Simulator", cat: "Paper",
     desc: { en: "Real-time shooting simulator with body tracking — Unity 3D, Kinect 2, OpenCV, and ESP32 hardware integration. Published at BICA 2023 (Springer, Volume 1130).", es: "Simulador de tiro en tiempo real con rastreo corporal — Unity 3D, Kinect 2, OpenCV e integración ESP32. Publicado en BICA 2023 (Springer, Volumen 1130)." },
     tech: ["Unity", "OpenCV", "Kinect 2", "ESP32", "Python"],
     color: "#111111", textColor: "#C6F24E", link: "#paper"
-  },
-  {
-    id: 11, title: "Disfrazarte", cat: "Web",
-    desc: { en: "Costume shop landing page for Disfrazarte — Ambato & Riobamba, Ecuador. Scrollytelling hero with clip-path parallax, 3-panel horizontal scroll, bento gallery catalog, and WhatsApp CTA flows. Built with Next.js 16, Tailwind v4, and Framer Motion.", es: "Landing page para Disfrazarte — tienda de trajes en Ambato y Riobamba, Ecuador. Hero scrollytelling con paralaje clip-path, scroll horizontal en 3 paneles, galería bento del catálogo y flujos de CTA por WhatsApp. Next.js 16, Tailwind v4 y Framer Motion." },
-    tech: ["Next.js 16", "Tailwind v4", "Framer Motion", "Vercel"],
-    color: "#0a0a1a", textColor: "#1baeea", link: "https://disfrazarte-delta.vercel.app", detailSlug: "disfrazarte"
-  },
-  {
-    id: 12, title: "Clínica Dental Goyanc", cat: "Web",
-    desc: { en: "Full website for a dental clinic in Madrid, Spain. Dark luxury aesthetic with gold accents, scroll-reveal text animations, an AI chat assistant for patient queries, and a WhatsApp conversion button — built with Next.js 15 and Tailwind CSS.", es: "Sitio web completo para una clínica dental en Madrid, España. Estética oscura de lujo con acentos dorados, animaciones de texto al scroll, asistente de chat IA para consultas y botón de conversión WhatsApp — Next.js 15 y Tailwind CSS." },
-    tech: ["Next.js 15", "Tailwind CSS", "Vercel"],
-    color: "#060810", textColor: "#c8a97e", link: "https://clinicadentalgoyanc.vercel.app/", detailSlug: "onmidental2"
-  },
-  {
-    id: 13, title: "Dental Estudio Tenerife", cat: "Web",
-    desc: { en: "Unsolicited redesign proposal for a dental clinic in Tenerife, Spain. Next.js 16, Three.js immersive visuals, Motion animations, and an AI chat assistant (Gemini Flash) for appointments and treatment queries — delivered pro bono.", es: "Propuesta de rediseño gratuita para una clínica dental en Tenerife. Next.js 16, visuales Three.js, animaciones Motion y chat IA (Gemini Flash) para citas y consultas de tratamientos — entregada sin costo." },
-    tech: ["Next.js", "React 19", "Three.js", "Gemini", "Vercel"],
-    color: "#0d2b45", textColor: "#7ecfff", link: "https://onmidental.vercel.app/", detailSlug: "onmidental"
   }
 ]
 
