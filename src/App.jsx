@@ -258,6 +258,12 @@ const PROJECTS = [
     desc: { en: "Unsolicited redesign proposal for a dental clinic in Tenerife, Spain. Next.js 16, Three.js immersive visuals, Motion animations, and an AI chat assistant (Gemini Flash) for appointments and treatment queries — delivered pro bono.", es: "Propuesta de rediseño gratuita para una clínica dental en Tenerife. Next.js 16, visuales Three.js, animaciones Motion y chat IA (Gemini Flash) para citas y consultas de tratamientos — entregada sin costo." },
     tech: ["Next.js", "React 19", "Three.js", "Gemini", "Vercel"],
     color: "#0d2b45", textColor: "#7ecfff", link: "https://onmidental.vercel.app/", detailSlug: "onmidental"
+  },
+  {
+    id: 12, title: "Disfrazarte", cat: "Web",
+    desc: { en: "Costume shop landing page for Disfrazarte — Ambato & Riobamba, Ecuador. Scrollytelling hero with clip-path parallax, 3-panel horizontal scroll, bento gallery catalog, and WhatsApp CTA flows. Built with Next.js 16, Tailwind v4, and Framer Motion.", es: "Landing page para Disfrazarte — tienda de trajes en Ambato y Riobamba, Ecuador. Hero scrollytelling con paralaje clip-path, scroll horizontal en 3 paneles, galería bento del catálogo y flujos de CTA por WhatsApp. Next.js 16, Tailwind v4 y Framer Motion." },
+    tech: ["Next.js 16", "Tailwind v4", "Framer Motion", "Vercel"],
+    color: "#0a0a1a", textColor: "#1baeea", link: "https://disfrazarte-delta.vercel.app", detailSlug: "disfrazarte"
   }
 ]
 
@@ -361,6 +367,24 @@ const PROJECT_DETAILS = {
         { src: "/projects/onmidental/onmidental-1.jpg", caption: "Vista completa" },
       ]
     }
+  },
+  disfrazarte: {
+    en: {
+      description: "Landing page for Disfrazarte — costume and dress rental shop with two locations in Ambato and Riobamba, Ecuador. Scrollytelling hero entry with clip-path parallax that expands on scroll, 3-panel horizontal sticky scroll showcasing services, bento-grid catalog gallery with drag-to-explore on desktop and 2-column mobile grid.<br/><br/>Built with Next.js 16, Tailwind CSS v4, and Framer Motion. WhatsApp CTA flows for catalog requests and reservations. Google Maps iframes for both store locations.",
+      images: [
+        { src: "/projects/disfrazarte/disfrazarte-0.jpg", caption: "Hero section" },
+        { src: "/projects/disfrazarte/disfrazarte-1.jpg", caption: "Services & catalog" },
+        { src: "/projects/disfrazarte/disfrazarte-2.jpg", caption: "Locations" },
+      ]
+    },
+    es: {
+      description: "Landing page para Disfrazarte — tienda de alquiler de trajes y disfraces con dos locales en Ambato y Riobamba, Ecuador. Hero scrollytelling con clip-path paralaje que se expande al desplazarse, scroll sticky horizontal en 3 paneles con los servicios, galería bento del catálogo con drag-to-explore en escritorio y grilla 2 columnas en móvil.<br/><br/>Next.js 16, Tailwind CSS v4 y Framer Motion. Flujos CTA por WhatsApp para solicitar catálogo y reservar. Google Maps embebido para ambos locales.",
+      images: [
+        { src: "/projects/disfrazarte/disfrazarte-0.jpg", caption: "Sección hero" },
+        { src: "/projects/disfrazarte/disfrazarte-1.jpg", caption: "Servicios y catálogo" },
+        { src: "/projects/disfrazarte/disfrazarte-2.jpg", caption: "Locales" },
+      ]
+    }
   }
 }
 
@@ -430,6 +454,19 @@ const TESTIMONIALS = [
 const STACK = ["AWS Lambda", "Docker", "GitHub Actions", "Next.js", "React", "Node.js", "NestJS", "N8N", "LangChain", "OpenAI", "PostgreSQL", "Qdrant", "MongoDB", "Unity", "Cursor", "Moodle"]
 
 const EXPERIENCES = [
+  {
+    badge: "DZ",
+    category: "freelancing",
+    title: { en: "Frontend Developer — Costume Shop Landing", es: "Desarrollador Frontend — Landing Tienda de Disfraces" },
+    where: "Disfrazarte",
+    location: "Ecuador",
+    period: "2026",
+    link: "https://disfrazarte-delta.vercel.app",
+    desc: {
+      en: "Landing page for a costume and dress rental shop with two locations in Ecuador. Scrollytelling hero with clip-path parallax, 3-panel horizontal scroll, bento catalog gallery with drag-to-explore, and WhatsApp CTA flows. Built with Next.js 16, Tailwind v4, and Framer Motion.",
+      es: "Landing page para tienda de alquiler de trajes con dos locales en Ecuador. Hero scrollytelling con paralaje clip-path, scroll horizontal en 3 paneles, galería bento del catálogo con drag-to-explore y flujos CTA por WhatsApp. Next.js 16, Tailwind v4 y Framer Motion."
+    }
+  },
   {
     badge: "OD",
     category: "freelancing",
