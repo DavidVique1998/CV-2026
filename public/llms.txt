@@ -6,23 +6,25 @@
 ## About
 
 David Vique is a Senior Full Stack AI Engineer based in Ecuador with 5+ years of experience
-building AI-driven SaaS products, automation pipelines, voice agents, and serverless cloud systems
+building AI-driven SaaS products, web and mobile apps, automation pipelines, voice agents, and cloud systems on AWS and Azure
 for US and European clients. End-to-end ownership: frontend, backend, DevOps, and AI integrations.
 
 9+ products shipped. Springer BICA 2023 paper (Vol. 1130). Triathlon finisher (1.5 km swim · 40 km bike · 10 km run).
 
 ## Skills & Technologies
 
-- **AI / LLM / Agents:** OpenAI · Claude · Mistral · LangChain · RAG · OCR · mem0 · MCPs
-- **Automation / CRM / Voice:** N8N · GoHighLevel · ElevenLabs · Twilio · Retell AI · WhatsApp API
-- **Frontend:** React · Next.js · Angular · Vue.js · Tailwind CSS · Three.js
-- **Backend:** NestJS · Node.js · Express · Laravel · Python · Spring Boot · .NET
-- **Cloud / DevOps:** AWS Lambda · S3 · SST · CloudFront · Terraform · Docker · GitHub Actions
-- **Databases:** PostgreSQL · MySQL · MongoDB · Qdrant · SQLite
-- **AI Tooling:** Claude Code · Cursor · Bolt · Lovable
+- **Languages:** TypeScript · JavaScript · Python · SQL
+- **Frontend & Mobile:** React · Next.js · React Native · Tailwind CSS · Angular · Vue.js · Three.js
+- **Backend & APIs:** Node.js · NestJS · Express · REST APIs · Webhooks
+- **AI / LLM:** OpenAI · Claude API · LangChain · RAG · AI Agents · MCP · OCR
+- **Cloud & DevOps:** AWS · Microsoft Azure · Azure DevOps · CI/CD · GitHub Actions · Docker · Terraform · SST
+- **Databases:** PostgreSQL · MongoDB · MySQL · Qdrant
+- **Integrations & Automation:** Salesforce · MeetMax · GoHighLevel · n8n · Twilio · ElevenLabs · WhatsApp API
+- **Product & Tools:** Product Design · UI/UX · Agile/Scrum · Claude Code · Cursor
 
 ## Selected Projects
 
+- **Opal Group Meetings** — Built from scratch: web app (Next.js + NestJS + PostgreSQL) plus iOS and Android apps (React Native) for one-on-one meetings at executive conferences. Azure + CI/CD pipelines, Salesforce and MeetMax integrations, product design and branding.
 - **UMI** — AI meeting intelligence (Meet, Zoom, Teams). Whisper transcription, RAG chat, mem0 memory, NestJS, Next.js, AWS Lambda.
 - **CT** — Commission Tracker for 50+ companies. Two-step dynamic prompt architecture, OCR, queue-based serverless processing.
 - **BMC** — React 19 SPA on S3+CloudFront. Streaming AI chat, Lambda form handlers, full SEO stack.

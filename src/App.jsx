@@ -25,7 +25,7 @@ const HERO_TIMELINE = [
   { year: '2023', skills: 'Unity · Python · Laravel · Vue.js' },
   { year: '2024', skills: 'React · LangChain · Docker · Cursor' },
   { year: '2025', skills: 'NestJS · Next.js · AWS · OpenAI · N8N' },
-  { year: '2026', skills: 'SST · mem0 · MCPs', active: true },
+  { year: '2026', skills: 'Azure DevOps · React Native · Salesforce', active: true },
 ]
 
 /* ===== CONTENT ===== */
@@ -473,7 +473,7 @@ const TESTIMONIALS = [
   }
 ]
 
-const STACK = ["AWS Lambda", "Docker", "GitHub Actions", "Next.js", "React", "Node.js", "NestJS", "N8N", "LangChain", "OpenAI", "PostgreSQL", "Qdrant", "MongoDB", "Unity", "Cursor", "Moodle"]
+const STACK = ["TypeScript", "Next.js", "React", "React Native", "Node.js", "NestJS", "PostgreSQL", "AWS Lambda", "Azure", "Azure DevOps", "Docker", "GitHub Actions", "OpenAI", "LangChain", "N8N", "Salesforce", "MongoDB", "Qdrant"]
 
 const EXPERIENCES = [
   {
@@ -526,6 +526,18 @@ const EXPERIENCES = [
     desc: {
       en: "AI automation agency delivering end-to-end voice and chat pipelines for SMBs. Build N8N agentic flows with multi-step tool calls, RAG memory, and fallback routing. Develop GoHighLevel embedded apps, Twilio SMS/voice integrations, ElevenLabs voice cloning for IVR, and Retell AI multi-turn voice agents for lead qualification. Automate WhatsApp funnels connected to CRM webhooks.",
       es: "Agencia de automatización IA con pipelines de voz y chat end-to-end para PYMEs. Flujos agénticos N8N, apps embebidas en GoHighLevel, Twilio SMS/voz, clonación de voz ElevenLabs para IVR y agentes de voz Retell AI para calificación de leads. Funnels WhatsApp conectados a webhooks de CRM."
+    }
+  },
+  {
+    badge: "OG",
+    category: "work",
+    title: { en: "Product Developer — Full Stack", es: "Product Developer — Full Stack" },
+    where: "Opal Group",
+    location: "New York, United States (Remote)",
+    period: "Jun. 2026 — Present",
+    desc: {
+      en: "Designed and built Opal Group's meetings platform from scratch on three platforms: a web app (Next.js + NestJS + PostgreSQL) and iOS and Android apps (React Native) to schedule one-on-one meetings at executive conferences, deployed on Azure with CI/CD pipelines. Owned the product end to end — branding, color system and component layout derived from the company's identity and existing systems — and integrated Salesforce and MeetMax to unify CRM and meeting data in one workflow.",
+      es: "Diseñé y construí desde cero la plataforma de reuniones de Opal Group en tres plataformas: app web (Next.js + NestJS + PostgreSQL) y apps iOS y Android (React Native) para agendar reuniones uno a uno en conferencias ejecutivas, desplegada en Azure con pipelines CI/CD. Responsable del producto de punta a punta — branding, sistema de colores y ubicación de componentes a partir de la identidad de la empresa y sus sistemas existentes — e integré Salesforce y MeetMax para unificar los datos de CRM y reuniones en un solo flujo."
     }
   },
   {
