@@ -192,81 +192,87 @@ const COPY = {
 
 const PROJECTS = [
   {
-    id: 1, title: "Disfrazarte", cat: "Web",
+    id: 1, title: "Opal Meetings", cat: "Web",
+    desc: { en: "Meetings platform for Opal Group's executive conferences, built from scratch: web app plus iOS and Android apps. Registration, AI matching that books one-on-one meetings into shared free slots, live attendee and vendor portals, and a real-time operations dashboard, synced with Salesforce and MeetMax.", es: "Plataforma de reuniones para las conferencias ejecutivas de Opal Group, construida desde cero: app web y apps iOS y Android. Registro, matching que agenda reuniones uno a uno en horarios libres para ambos, portales en vivo para asistentes y vendors y dashboard de operaciones en tiempo real, sincronizada con Salesforce y MeetMax." },
+    tech: ["Next.js", "NestJS", "PostgreSQL", "React Native", "Azure DevOps", "Salesforce"],
+    color: "#070708", textColor: "#1c75bc", link: "https://meetings-dev.opalgroup.net", detailSlug: "opal"
+  },
+  {
+    id: 2, title: "Disfrazarte", cat: "Web",
     desc: { en: "Costume shop landing page for Disfrazarte — Ambato & Riobamba, Ecuador. Scrollytelling hero with clip-path parallax, 3-panel horizontal scroll, bento gallery catalog, and WhatsApp CTA flows. Built with Next.js 16, Tailwind v4, and Framer Motion.", es: "Landing page para Disfrazarte — tienda de trajes en Ambato y Riobamba, Ecuador. Hero scrollytelling con paralaje clip-path, scroll horizontal en 3 paneles, galería bento del catálogo y flujos de CTA por WhatsApp. Next.js 16, Tailwind v4 y Framer Motion." },
     tech: ["Next.js 16", "Tailwind v4", "Framer Motion", "Vercel"],
     color: "#0a0a1a", textColor: "#1baeea", link: "https://disfrazarte-delta.vercel.app", detailSlug: "disfrazarte"
   },
   {
-    id: 2, title: "Clínica Dental Goyanc", cat: "Web",
+    id: 3, title: "Clínica Dental Goyanc", cat: "Web",
     desc: { en: "Full website for a dental clinic in Madrid, Spain. Dark luxury aesthetic with gold accents, scroll-reveal text animations, an AI chat assistant for patient queries, and a WhatsApp conversion button — built with Next.js 15 and Tailwind CSS.", es: "Sitio web completo para una clínica dental en Madrid, España. Estética oscura de lujo con acentos dorados, animaciones de texto al scroll, asistente de chat IA para consultas y botón de conversión WhatsApp — Next.js 15 y Tailwind CSS." },
     tech: ["Next.js 15", "Tailwind CSS", "Vercel"],
     color: "#060810", textColor: "#c8a97e", link: "https://clinicadentalgoyanc.vercel.app/", detailSlug: "onmidental2"
   },
   {
-    id: 3, title: "Dental Estudio Tenerife", cat: "Web",
+    id: 4, title: "Dental Estudio Tenerife", cat: "Web",
     desc: { en: "Unsolicited redesign proposal for a dental clinic in Tenerife, Spain. Next.js 16, Three.js immersive visuals, Motion animations, and an AI chat assistant (Gemini Flash) for appointments and treatment queries — delivered pro bono.", es: "Propuesta de rediseño gratuita para una clínica dental en Tenerife. Next.js 16, visuales Three.js, animaciones Motion y chat IA (Gemini Flash) para citas y consultas de tratamientos — entregada sin costo." },
     tech: ["Next.js", "React 19", "Three.js", "Gemini", "Vercel"],
     color: "#0d2b45", textColor: "#7ecfff", link: "https://onmidental.vercel.app/", detailSlug: "onmidental"
   },
   {
-    id: 4, title: "Benefit Match Center", cat: "Web",
+    id: 5, title: "Benefit Match Center", cat: "Web",
     desc: { en: "Section 125 benefits platform — React 19 SPA on AWS S3+CloudFront, two serverless Lambda functions for form handling and a streaming AI chat widget, with Resend email delivery.", es: "Plataforma de beneficios Section 125 — SPA React 19 en AWS S3+CloudFront, dos funciones Lambda serverless para formularios y chat IA en streaming, con entrega de email vía Resend." },
     tech: ["React 19", "AWS Lambda", "SST", "CloudFront", "Claude API"],
     color: "#0F1A2E", textColor: "#C49B3C", link: "https://benefitmatchcenter.com/", detailSlug: "bmc"
   },
   {
-    id: 5, title: "UMI — Unified Meeting Intel", cat: "AI",
+    id: 6, title: "UMI — Unified Meeting Intel", cat: "AI",
     desc: { en: "Multi-platform meeting integration for Google Meet, Zoom, and Teams — transcription analysis, third-party transcript uploads, AI chat flows, and real-time statistics.", es: "Integración de reuniones multi-plataforma (Meet, Zoom, Teams) con análisis de transcripciones, carga de transcripts externos, flujos de chat IA y estadísticas en tiempo real." },
     tech: ["NestJS", "Next.js", "AWS Lambda", "OpenAI", "PostgreSQL"],
     color: "#1C1D20", textColor: "#6366F1", link: "https://d9shobjqv3rms.cloudfront.net/", detailSlug: "umi"
   },
   {
-    id: 6, title: "Commission Tracker (CT)", cat: "AI",
+    id: 7, title: "Commission Tracker (CT)", cat: "AI",
     desc: { en: "Serverless analyzer for 52 companies with dynamic prompts, PDF OCR, and queue-based flows for commission data validation. Deployed on AWS Lambda with GitHub Actions CI/CD.", es: "Analizador serverless para 52 empresas con prompts dinámicos, OCR de PDF y flujos de cola para validación de comisiones. Desplegado en AWS Lambda con CI/CD en GitHub Actions." },
     tech: ["AWS Lambda", "OpenAI", "OCR", "GitHub Actions", "Node.js"],
     color: "#121315", textColor: "#0EA5E9", link: "#", detailSlug: "ct"
   },
   {
-    id: 7, title: "N8N Relatividad IA", cat: "AI",
+    id: 8, title: "N8N Relatividad IA", cat: "AI",
     desc: { en: "Multiple self-hosted N8N chatbots, one per customer — orchestrating LLM conversations with isolated pipelines and guardrails.", es: "N8N multi-cliente auto-hospedado con chatbots aislados por cliente que orquestan conversaciones LLM." },
     tech: ["N8N", "Docker", "LangChain", "Evolution API"],
     color: "#000000", textColor: "#ffffff", link: "https://www.relatividadia.com/",
     previewImg: "/projects/relatividad/relatividad-0.jpg"
   },
   {
-    id: 8, title: "Entropía N8N Studio", cat: "Freelancing",
+    id: 9, title: "Entropía N8N Studio", cat: "Freelancing",
     desc: { en: "AI automation agency delivering end-to-end voice and chat pipelines. N8N agentic flows, GoHighLevel embedded apps, ElevenLabs voice cloning, Twilio SMS/voice, Retell AI multi-turn voice agents, and WhatsApp lead funnels connected to CRM webhooks.", es: "Agencia de automatización IA con pipelines de voz y chat end-to-end. Flujos agénticos N8N, apps embebidas en GoHighLevel, voz ElevenLabs, SMS/voz Twilio, agentes de voz Retell AI y funnels WhatsApp conectados a CRM." },
     tech: ["N8N", "GoHighLevel", "ElevenLabs", "Twilio", "Retell AI", "WhatsApp API"],
     color: "#1a0533", textColor: "#C6F24E", link: "https://entropia-n8n-studio.vercel.app/en", detailSlug: "entropia"
   },
   {
-    id: 9, title: "Atiende — CRM WhatsApp", cat: "CRM",
+    id: 10, title: "Atiende — CRM WhatsApp", cat: "CRM",
     desc: { en: "WhatsApp ticketing CRM wired into N8N automations — full customer lifecycle from first message to resolution.", es: "CRM de tickets WhatsApp conectado a N8N — ciclo completo del cliente desde el primer mensaje hasta la resolución." },
     tech: ["Next.js", "N8N", "Appwrite", "WhatsApp API"],
     color: "#C6F24E", textColor: "#111111", link: "#"
   },
   {
-    id: 10, title: "Qubex LLM", cat: "AI",
+    id: 11, title: "Qubex LLM", cat: "AI",
     desc: { en: "A cutting-edge assistant exposing large language models through a polished chat UI.", es: "Asistente de punta que expone LLMs a través de una UI de chat pulida." },
     tech: ["Next.js", "React", "OpenAI", "Vercel"],
     color: "#0B1121", textColor: "#A78BFA", link: "https://qubex-global.vercel.app/", detailSlug: "qubex"
   },
   {
-    id: 11, title: "Fenix Conocimiento", cat: "LMS",
+    id: 12, title: "Fenix Conocimiento", cat: "LMS",
     desc: { en: "Learning management system for Fenix's internal knowledge base — custom theme, course catalog, and ChatBot LLM integration.", es: "LMS para la base de conocimiento interna de Fenix — tema personalizado, catálogo de cursos e integración ChatBot LLM." },
     tech: ["Moodle", "PHP", "MySQL", "Grafana"],
     color: "#111111", textColor: "#ffffff", link: "https://conocimiento.mysistemafenix.com",
     previewImg: "/projects/fenix/fenix-0.jpg"
   },
   {
-    id: 12, title: "Taurhus Capacitaciones", cat: "LMS",
+    id: 13, title: "Taurhus Capacitaciones", cat: "LMS",
     desc: { en: "Full LMS for online courses with custom theme, enrollment flows, certificates, and Laravel Mix Vue.js integrations.", es: "LMS completo para cursos en línea con tema personalizado, flujos de matrícula, certificados e integraciones Laravel Mix Vue.js." },
     tech: ["Moodle", "Laravel", "Vue.js", "MySQL", "PHP"],
     color: "#2D1B69", textColor: "#ffffff", link: "https://taurhus.com.ec"
   },
   {
-    id: 13, title: "Shooting Range Simulator", cat: "Paper",
+    id: 14, title: "Shooting Range Simulator", cat: "Paper",
     desc: { en: "Real-time shooting simulator with body tracking — Unity 3D, Kinect 2, OpenCV, and ESP32 hardware integration. Published at BICA 2023 (Springer, Volume 1130).", es: "Simulador de tiro en tiempo real con rastreo corporal — Unity 3D, Kinect 2, OpenCV e integración ESP32. Publicado en BICA 2023 (Springer, Volumen 1130)." },
     tech: ["Unity", "OpenCV", "Kinect 2", "ESP32", "Python"],
     color: "#111111", textColor: "#C6F24E", link: "#paper"
@@ -274,6 +280,24 @@ const PROJECTS = [
 ]
 
 const PROJECT_DETAILS = {
+  opal: {
+    en: {
+      description: "Opal Meetings runs the one-to-one meetings of every Opal Group executive event. I designed and built it from scratch on three platforms: a web app (Next.js + NestJS + PostgreSQL) and iOS and Android apps (React Native).<br/><br/>Delegates and vendors register and get their badge, pick and rank who they want to meet, and the matching algorithm books each pair into a time slot both have free. Attendee and vendor portals show each schedule live, and the operations dashboard tracks quotas, matches and alerts in real time. Salesforce and MeetMax stay in sync, and everything is deployed on Azure with CI/CD pipelines. Branding, color system and layout were derived from Opal Group's identity and existing systems.",
+      images: [
+        { src: "/projects/opal/opal-0.jpg", caption: "Landing page" },
+        { src: "/projects/opal/opal-1.jpg", caption: "Operations dashboard" },
+        { src: "/projects/opal/opal-2.jpg", caption: "Event badge & live demo" },
+      ]
+    },
+    es: {
+      description: "Opal Meetings gestiona las reuniones uno a uno de cada evento ejecutivo de Opal Group. La diseñé y construí desde cero en tres plataformas: app web (Next.js + NestJS + PostgreSQL) y apps iOS y Android (React Native).<br/><br/>Delegados y vendors se registran y obtienen su credencial, eligen y priorizan a quién quieren conocer, y el algoritmo de matching agenda cada par en un horario libre para ambos. Los portales de asistentes y vendors muestran cada agenda en vivo y el dashboard de operaciones sigue cupos, matches y alertas en tiempo real. Salesforce y MeetMax se mantienen sincronizados, y todo se despliega en Azure con pipelines CI/CD. Branding, sistema de colores y layout basados en la identidad de Opal Group y sus sistemas existentes.",
+      images: [
+        { src: "/projects/opal/opal-0.jpg", caption: "Landing page" },
+        { src: "/projects/opal/opal-1.jpg", caption: "Dashboard de operaciones" },
+        { src: "/projects/opal/opal-2.jpg", caption: "Credencial del evento y demo" },
+      ]
+    }
+  },
   bmc: {
     en: {
       description: "Section 125 benefits platform built for US employers. React 19 SPA deployed on AWS S3 + CloudFront, with two serverless Lambda functions handling form submissions and a streaming AI chat widget powered by Claude API.<br/><br/>Email delivery via Resend. Fully managed infrastructure using SST v4 — zero servers, zero idle cost.",
